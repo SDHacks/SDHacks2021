@@ -3,7 +3,7 @@ import { Container, Button } from 'react-bootstrap';
 import styled from 'styled-components';
 
 import { ReactComponent as Building } from '../assets/building-hero.svg';
-import { ReactComponent as Train } from '../assets/train.svg';
+import { ReactComponent as Train } from '../assets/train-1.svg';
 import { ReactComponent as Trees } from '../assets/trees.svg';
 
 const Hero = () => {
