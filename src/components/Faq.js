@@ -75,8 +75,9 @@ color: #181727;
 }
 
 .q-card{
-
-    perspective: 1000px;
+  -webkit-backface-visibility: hidden;
+  -webkit-perspective: 1000;
+  perspective: 1000px;
     font-family: Trap;
     font-style: normal;
     font-weight: 900;
@@ -94,12 +95,13 @@ color: #181727;
     height: 100%;
     text-align: center;
     transition: transform 0.8s;
+    -webkit-transition: -webkit-transform 0.8s; 
     transform-style: preserve-3d;
 
     height: 20rem;
     width: 30rem;
 
-    background: #44B5C5;
+    
     margin-bottom: 2rem;
 
   }
@@ -162,7 +164,28 @@ color: #181727;
     text-align:left
     font-family: Trap;
     font-style: normal;
-    font-weight: normal;
+    font-weight: normal; .q-card-front {
+      background-color: #44B5C5;
+      color: black;
+    }
+    
+  
+    .q-card-back {
+      padding-right:4rem;
+      padding-left 3rem;
+      padding-top: 2rem;
+      text-align:left
+      font-family: Trap;
+      font-style: normal;
+      font-weight: normal;
+      font-size: 18px;
+      line-height: 20px;
+      background-color: #181727;
+      color: white;
+      transform: rotateY(180deg);
+  
+      box-shadow: 10px 10px 0px 1px #44B5C5;
+    }
     font-size: 18px;
     line-height: 20px;
     background-color: #181727;
