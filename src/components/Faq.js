@@ -41,7 +41,7 @@ const Faq = () => {
 
 const FaqWrapper = styled.section`
 background: #D2F6FB;
-padding: 3rem;
+padding-top: 3rem;
 h1{
     font-family: Trap;
 font-style: normal;
@@ -84,11 +84,11 @@ color: #181727;
     line-height: 44px;
     
     color: #191826;
+ 
 }
 
 
   .q-card-inner {
-    
     position: relative;
     width: 100%;
     height: 100%;
@@ -96,11 +96,12 @@ color: #181727;
     transition: transform 0.8s;
     transform-style: preserve-3d;
 
-  
+    height: 20rem;
+    width: 30rem;
+
     background: #44B5C5;
     margin-bottom: 2rem;
-    height: 300px;
-    width: 500px;
+
   }
   
 
@@ -169,6 +170,56 @@ color: #181727;
     transform: rotateY(180deg);
 
     box-shadow: 10px 10px 0px 1px #44B5C5;
+  }
+
+  @media only screen and (max-width: 800px) {
+    .q-card-inner {
+
+      height: 20rem;
+      width: 20rem;
+  
+      background: #44B5C5;
+      margin-bottom: 2rem;
+  
+    }
+    .q-card-front {
+      padding-right:4rem;
+      padding-left 3rem;
+      padding-top: 4rem;
+    }
+  
+
+    .q-card-back {
+      padding-right:1rem;
+      padding-left 1rem;
+      padding-top: 2rem;
+      font-size: 16px;
+    }
+  }
+  
+  @media only screen and (max-width: 1200px) {
+    .q-card-inner {
+
+      height: 20rem;
+      width: 20rem;
+  
+      background: #44B5C5;
+      margin-bottom: 2rem;
+  
+    }
+    .q-card-front {
+      padding-right:4rem;
+      padding-left 3rem;
+      padding-top: 4rem;
+    }
+  
+
+    .q-card-back {
+      padding-right:1rem;
+      padding-left 1rem;
+      padding-top: 2rem;
+      font-size: 16px;
+    }
   }
 
 
