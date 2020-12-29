@@ -113,7 +113,7 @@ color: #181727;
     font-weight: 900;
     font-size: 24px;
     line-height: 26px;
-    
+    padding-bottom: 1rem;
     color: #44B5C5;
   }
   .flip-card-back {
