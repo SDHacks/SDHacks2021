@@ -12,7 +12,7 @@
     {
         question: 'What if I don\'t have a team?',
         answer:
-            'Students of any major are free to attend and network with orgs.',
+            'We will host a team formation event at the beginning of the hackathon so that no one has to hack alone (unless they want to). We allow teams of up to four hackers. If you do have a team, we will do our best to accept you all. Make sure ALL members apply and join the same team by using your unique team code.',
     },
     {
         question: 'Is there a registration fee?',

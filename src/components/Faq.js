@@ -13,12 +13,12 @@ const Faq = () => {
 
             <Row>
                 {data.map(obj => (<Col md={6} xs={12}>
-                    <div className='flip-card'>
-                    <div className='flip-card-inner'>
-                    <div class="flip-card-front">
+                    <div className='q-card'>
+                    <div className='q-card-inner'>
+                    <div class="q-card-front">
                     {obj.question}
                          </div>
-                         <div class="flip-card-back">
+                         <div class="q-card-back">
                              <div class='back-q'>
                              {obj.question}
                              </div>
@@ -74,7 +74,7 @@ color: #181727;
     
 }
 
-.flip-card{
+.q-card{
 
     perspective: 1000px;
     font-family: Trap;
@@ -87,7 +87,7 @@ color: #181727;
 }
 
 
-  .flip-card-inner {
+  .q-card-inner {
     
     position: relative;
     width: 100%;
@@ -104,7 +104,7 @@ color: #181727;
   }
   
 
-  .flip-card:hover .flip-card-inner {
+  .q-card:hover .q-card-inner {
     transform: rotateY(180deg);
   }
   .back-q{
@@ -116,7 +116,7 @@ color: #181727;
     padding-bottom: 1rem;
     color: #44B5C5;
   }
-  .flip-card-back {
+  .q-card-back {
     padding-left: 3rem;
     padding-top: 3rem;
     
@@ -131,7 +131,7 @@ color: #181727;
     box-shadow: 8px 8px 0px 1px #000000;
   }
 
-  .flip-card-front {
+  .q-card-front {
     padding-right:4rem;
     padding-left 3rem;
     padding-top: 8rem;
@@ -148,13 +148,13 @@ color: #181727;
   }
   
 
-  .flip-card-front {
+  .q-card-front {
     background-color: #44B5C5;
     color: black;
   }
   
 
-  .flip-card-back {
+  .q-card-back {
     padding-right:4rem;
     padding-left 3rem;
     padding-top: 2rem;
