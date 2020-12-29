@@ -9,17 +9,17 @@ const Faq = () => {
         <FaqWrapper>
             <Container>
             <p>frequently asked </p>
-            <p class = 'ques'>QUESTIONS</p>
+            <p className='ques'>QUESTIONS</p>
 
             <Row>
-                {data.map(obj => (<Col md={6} xs={12}>
-                    <div className='q-card'>
-                    <div className='q-card-inner'>
-                    <div class="q-card-front">
+                {data.map((obj,i) => (<Col md={6} xs={12} key={i}>
+                    <div className='card-wrapper'>
+                    <div className='card-main'>
+                    <div className="card-front">
                     {obj.question}
                          </div>
-                         <div class="q-card-back">
-                             <div class='back-q'>
+                         <div className="card-back">
+                             <div className='back-q'>
                              {obj.question}
                              </div>
                              {obj.answer}
@@ -43,210 +43,159 @@ const FaqWrapper = styled.section`
 background: #D2F6FB;
 padding-top: 3rem;
 h1{
-    font-family: Trap;
-font-style: normal;
-font-weight: 900;
-font-size: 40px;
-line-height: 44px;
-
-color: #191826;
+  font-family: Trap;
+  font-style: normal;
+  font-weight: 900;
+  font-size: 40px;
+  line-height: 44px;
+  color: #191826;
 
 }
 p{
-font-family: Trap;
-font-style: normal;
-font-weight: 900;
-font-size: 48px;
-line-height: 53px;
-
-color: #181727;
+  font-family: Trap;
+  font-style: normal;
+  font-weight: 900;
+  font-size: 48px;
+  line-height: 53px;
+  color: #181727;
 }
 
 .ques{
-    font-family: Trap;
-    font-style: normal;
-    font-weight: 900;
-    font-size: 48px;
-    line-height: 53px;
-    
-    color: #44B5C5;
+  font-family: Trap;
+  font-style: normal;
+  font-weight: 900;
+  font-size: 48px;
+  line-height: 53px;
+  color: #44B5C5;
      
     
 }
 
-.q-card{
+.card-wrapper{
   -webkit-backface-visibility: hidden;
   -webkit-perspective: 1000;
   perspective: 1000px;
-    font-family: Trap;
-    font-style: normal;
-    font-weight: 900;
-    font-size: 40px;
-    line-height: 44px;
-    
-    color: #191826;
- 
+  font-family: Trap;
+  font-style: normal;
+  font-weight: 900;
+  font-size: 40px;
+  line-height: 44px;
+  color: #191826;
 }
 
 
-  .q-card-inner {
-    position: relative;
-    width: 100%;
-    height: 100%;
-    text-align: center;
-    transition: transform 0.8s;
-    -webkit-transition: -webkit-transform 0.8s; 
-    transform-style: preserve-3d;
+.card-main {
+  position: relative;
+  width: 100%;
+  height: 100%;
+  text-align: center;
+  transition: transform 0.8s;
+  -webkit-transition: -webkit-transform 0.8s; 
+  transform-style: preserve-3d;
+  height: 20rem;
+  width: 30rem;
+  margin-bottom: 2rem;
+}
+  
 
+.card-wrapper:hover .card-main {
+  transform: rotateY(180deg);
+}
+
+.back-q{
+  font-family: Trap;
+  font-style: normal;
+  font-weight: 900;
+  font-size: 24px;
+  line-height: 26px;
+  padding-bottom: 1rem;
+  color: #44B5C5;
+}
+
+.card-front {
+  padding-right:4rem;
+  padding-left 3rem;
+  padding-top: 8rem;
+  text-align:left;
+  background: #44B5C5;
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  -webkit-backface-visibility: hidden; 
+  backface-visibility: hidden;
+  -webkit-box-shadow: 8px 8px 0px 1px #000000; 
+  box-shadow: 10px 10px 0px 1px #000000;
+  background-color: #44B5C5;
+  color: black;
+}
+
+.card-back {
+  padding-right:4rem;
+  padding-left 3rem;
+  padding-top: 2rem;
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  -webkit-backface-visibility: hidden; 
+  backface-visibility: hidden;
+  text-align:left;
+  font-family: Trap;
+  font-style: normal;
+  font-weight: normal;
+  font-size: 18px;
+  line-height: 20px;
+  background-color: #181727;
+  color: white;
+  transform: rotateY(180deg);
+  box-shadow: 10px 10px 0px 1px #44B5C5;
+}
+
+
+
+
+
+@media only screen and (max-width: 800px) {
+  .card-main {
     height: 20rem;
-    width: 30rem;
-
-    
+    width: 20rem;
+    background: #44B5C5;
     margin-bottom: 2rem;
-
   }
-  
-
-  .q-card:hover .q-card-inner {
-    transform: rotateY(180deg);
-  }
-  .back-q{
-    font-family: Trap;
-    font-style: normal;
-    font-weight: 900;
-    font-size: 24px;
-    line-height: 26px;
-    padding-bottom: 1rem;
-    color: #44B5C5;
-  }
-  .q-card-back {
-    padding-left: 3rem;
-    padding-top: 3rem;
-    
-    background: #44B5C5;
-    position: absolute;
-    width: 100%;
-    height: 100%;
-    -webkit-backface-visibility: hidden; 
-    backface-visibility: hidden;
-
-    -webkit-box-shadow: 8px 8px 0px 1px #000000; 
-    box-shadow: 8px 8px 0px 1px #000000;
-  }
-
-  .q-card-front {
+  .card-front {
     padding-right:4rem;
     padding-left 3rem;
-    padding-top: 8rem;
-    text-align:left;
-    background: #44B5C5;
-    position: absolute;
-    width: 100%;
-    height: 100%;
-    -webkit-backface-visibility: hidden; 
-    backface-visibility: hidden;
-
-    -webkit-box-shadow: 8px 8px 0px 1px #000000; 
-    box-shadow: 10px 10px 0px 1px #000000;
+    padding-top: 4rem;
   }
-  
 
-  .q-card-front {
-    background-color: #44B5C5;
-    color: black;
-  }
-  
-
-  .q-card-back {
-    padding-right:4rem;
-    padding-left 3rem;
+  .card-back {
+    padding-right:1rem;
+    padding-left 1rem;
     padding-top: 2rem;
-    text-align:left
-    font-family: Trap;
-    font-style: normal;
-    font-weight: normal; .q-card-front {
-      background-color: #44B5C5;
-      color: black;
-    }
-    
-  
-    .q-card-back {
-      padding-right:4rem;
-      padding-left 3rem;
-      padding-top: 2rem;
-      text-align:left
-      font-family: Trap;
-      font-style: normal;
-      font-weight: normal;
-      font-size: 18px;
-      line-height: 20px;
-      background-color: #181727;
-      color: white;
-      transform: rotateY(180deg);
-  
-      box-shadow: 10px 10px 0px 1px #44B5C5;
-    }
-    font-size: 18px;
-    line-height: 20px;
-    background-color: #181727;
-    color: white;
-    transform: rotateY(180deg);
+    font-size: 16px;
+  }
+}
 
-    box-shadow: 10px 10px 0px 1px #44B5C5;
+@media only screen and (max-width: 1200px) {
+  .card-main {
+    height: 20rem;
+    width: 20rem;
+    background: #44B5C5;
+    margin-bottom: 2rem;
   }
 
-  @media only screen and (max-width: 800px) {
-    .q-card-inner {
-
-      height: 20rem;
-      width: 20rem;
-  
-      background: #44B5C5;
-      margin-bottom: 2rem;
-  
-    }
-    .q-card-front {
-      padding-right:4rem;
-      padding-left 3rem;
-      padding-top: 4rem;
-    }
-  
-
-    .q-card-back {
-      padding-right:1rem;
-      padding-left 1rem;
-      padding-top: 2rem;
-      font-size: 16px;
-    }
-  }
-  
-  @media only screen and (max-width: 1200px) {
-    .q-card-inner {
-
-      height: 20rem;
-      width: 20rem;
-  
-      background: #44B5C5;
-      margin-bottom: 2rem;
-  
-    }
-    .q-card-front {
-      padding-right:4rem;
-      padding-left 3rem;
-      padding-top: 4rem;
-    }
-  
-
-    .q-card-back {
-      padding-right:1rem;
-      padding-left 1rem;
-      padding-top: 2rem;
-      font-size: 16px;
-    }
+  .card-front {
+    padding-right:4rem;
+    padding-left 3rem;
+    padding-top: 4rem;
   }
 
-
-
+  .card-back {
+    padding-right:1rem;
+    padding-left 1rem;
+    padding-top: 2rem;
+    font-size: 16px;
+  }
+}
 `;
 
 export default Faq;
