@@ -2,20 +2,25 @@ import React from 'react';
 import { Container, Button } from 'react-bootstrap';
 import styled from 'styled-components';
 
-import { ReactComponent as Building } from '../assets/svg/building-hero-br.svg';
-import { ReactComponent as Train } from '../assets/svg/train-1.svg';
-import { ReactComponent as Trees } from '../assets/svg/trees.svg';
+// import { ReactComponent as Train } from '../assets/svg/train-1.svg';
+// import { ReactComponent as Trees } from '../assets/svg/trees.svg';
+
+import { ReactComponent as BuildingBR } from '../assets/svg/building-hero-br.svg';
+import { ReactComponent as BuildingBL } from '../assets/svg/building-hero-bl.svg';
+import { ReactComponent as BuildingTL } from '../assets/svg/building-hero-tl.svg';
+import { ReactComponent as BuildingTR } from '../assets/svg/building-hero-tr.svg';
+import { ReactComponent as Logo} from '../assets/svg/hero-logo.svg';
 
 const Hero = () => {
     return (
         <HeroWrapper>
-            <Container className="mb-5">
-                <h1>
+            <div className="application">
+                {/* <h1>
                     <span>SD</span>
                     <br />
                     hacks
                 </h1>
-                <h2>February 19-21, 2021</h2>
+                <h2>February 19-21, 2021</h2> */}
                 <h3 className="mb-4">Completely Virtual</h3>
                 <Button
                     size="lg"
@@ -25,10 +30,13 @@ const Hero = () => {
                 >
                     Apply Now
                 </Button>
-            </Container>
-            <Building className="building-img" />
-            <Train className="train-img" />
-            <Trees className="trees-img" />
+            </div>
+            <BuildingTR className="building-TR" />
+            <BuildingTL className="building-TL" />
+            <BuildingBR className="building-BR" />
+            <BuildingBL className="building-BL" />
+            <Logo className="hero-center"/>
+        
         </HeroWrapper>
     );
 };
@@ -41,8 +49,17 @@ const HeroWrapper = styled.section`
     align-items: center;
     position: relative;
 
-    .container {
+    .application {
         z-index: 1;
+        position: absolute;
+        bottom: 5%;
+        right: 20%;
+
+        @media (max-width: 576px) {
+            bottom: 5%;
+            right: 5%;
+        }
+
     }
 
     h1 {
@@ -63,27 +80,109 @@ const HeroWrapper = styled.section`
         color: var(--orange);
     }
 
-    .building-img {
+    .building-BR {
         position: absolute;
-        top: 0;
+        bottom: -10%;
         right: 0;
-        width: 30%;
+        width: 20%;
+        z-index: 1;
 
         @media (max-width: 576px) {
             display: none;
         }
     }
 
-    .train-img {
+    .building-BL {
         position: absolute;
-        bottom: -2px;
-        left: -5px;
+        bottom: -5%;
+        left: 20%;
+        width: 18%;
+        z-index: 1;
+
+        @media (max-width: 1375px) {
+            width: 20%;
+        }
+
+        @media (max-width: 1350px) {
+            width: 25%;
+        }
+
+        @media (max-width: 1100px) {
+            width: 27%;
+            left: 16%;
+            bottom: -2%;
+        }
+
+        @media (max-width: 960px) {
+            left: 13%;
+            bottom: 3%;
+        }
+
+        @media (max-width: 760px) {
+            left: 8%;
+        }
+
+        @media (max-width: 576px) {
+            display: none;
+        }
     }
 
-    .trees-img {
+    .building-TR {
         position: absolute;
-        bottom: -55px;
-        right: 0;
+        top: 6%;
+        right: 22%;
+        width: 18%;
+
+        @media (max-width: 1375px) {
+            width: 20%;
+        }
+
+        @media (max-width: 1350px) {
+            width: 23%;
+        }
+
+        @media (max-width: 1100px) {
+            width: 25%;
+            right: 18%;
+            top: 9%;
+        }
+
+        @media (max-width: 960px) {
+            right: 15%;
+            top: 14%;
+        }
+
+        @media (max-width: 760px) {
+            right: 10%;
+        }
+
+        @media (max-width: 576px) {
+            display: none;
+        }
+    }
+
+    .building-TL {
+        position: absolute;
+        top: 0%;
+        left: -3.5%;
+        width: 15%;
+
+        @media (max-width: 576px) {
+            display: none;
+        }
+    }
+
+    .hero-center {
+        position: absolute;
+        margin-left: auto;
+        margin-right: auto;
+        right: 0%;
+        left: 0%;
+        width: 40%;
+
+        @media (max-width: 576px) {
+            width: 70%;
+        }
     }
 `;
 
