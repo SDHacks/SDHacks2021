@@ -85,6 +85,7 @@ const HeroWrapper = styled.section`
         bottom: -10%;
         right: 0;
         width: 20%;
+        z-index: 1;
 
         @media (max-width: 576px) {
             display: none;
@@ -95,7 +96,31 @@ const HeroWrapper = styled.section`
         position: absolute;
         bottom: -5%;
         left: 20%;
-        width: 15%;
+        width: 18%;
+        z-index: 1;
+
+        @media (max-width: 1375px) {
+            width: 20%;
+        }
+
+        @media (max-width: 1350px) {
+            width: 25%;
+        }
+
+        @media (max-width: 1100px) {
+            width: 27%;
+            left: 16%;
+            bottom: -2%;
+        }
+
+        @media (max-width: 960px) {
+            left: 13%;
+            bottom: 3%;
+        }
+
+        @media (max-width: 760px) {
+            left: 8%;
+        }
 
         @media (max-width: 576px) {
             display: none;
@@ -107,6 +132,29 @@ const HeroWrapper = styled.section`
         top: 6%;
         right: 22%;
         width: 18%;
+
+        @media (max-width: 1375px) {
+            width: 20%;
+        }
+
+        @media (max-width: 1350px) {
+            width: 23%;
+        }
+
+        @media (max-width: 1100px) {
+            width: 25%;
+            right: 18%;
+            top: 9%;
+        }
+
+        @media (max-width: 960px) {
+            right: 15%;
+            top: 14%;
+        }
+
+        @media (max-width: 760px) {
+            right: 10%;
+        }
 
         @media (max-width: 576px) {
             display: none;

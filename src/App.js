@@ -13,4 +13,6 @@ class SDHacksPage extends Component {
                 <About />
             </>
         );
+    }
+}
 export default withRouter(SDHacksPage);
