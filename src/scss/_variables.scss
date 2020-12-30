@@ -29,3 +29,13 @@ $navbar-light-hover-color: theme-color('dark');
 $navbar-light-brand-color: $navbar-light-color;
 
 @import '../../node_modules/bootstrap/scss/bootstrap';
+
+/* default breakpoint reference
+
+xs: < 576px
+sm: >= 576px
+md: >= 768px
+lg: >= 992px
+xl: >= 1200px
+
+*/
