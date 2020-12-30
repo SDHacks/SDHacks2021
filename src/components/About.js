@@ -38,8 +38,8 @@ const About = () => {
                     </Col>
                 </Row>
             </StyledContainer>
-            <Train className="train"/>
-            <Trees className="trees"/>
+            <Train className="train" />
+            <Trees className="trees" />
         </AboutSection>
     );
 };
@@ -81,13 +81,12 @@ const AboutSection = styled.section`
             display: none;
         }
     }
-
 `;
 
 const StyledContainer = styled(Container)`
     color: var(--dark);
     font-family: Trap, sans-serif;
-    padding-top: 15rem;
+    padding-top: 10rem;
     padding-bottom: 18rem;
 
     @media (max-width: 576px) {

@@ -13,9 +13,9 @@ const Team = () => {
                 <TeamHeader>
                     meet the <span style={{ color: '#81CB72' }}>team</span>
                 </TeamHeader>
-                <Row lg={3} xs={1} className="justify-content-center">
+                <Row className="justify-content-center">
                     {teamData.map(({ img, name, position }, i) => (
-                        <Col key={i}>
+                        <Col key={i} lg={position ? 6 : 4} xs={1}>
                             <Profile>
                                 <img src={img} alt={name} width="100%" />
                                 <div className="profile-content">

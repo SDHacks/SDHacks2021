@@ -9,34 +9,33 @@ import { ReactComponent as BuildingBR } from '../assets/svg/building-hero-br.svg
 import { ReactComponent as BuildingBL } from '../assets/svg/building-hero-bl.svg';
 import { ReactComponent as BuildingTL } from '../assets/svg/building-hero-tl.svg';
 import { ReactComponent as BuildingTR } from '../assets/svg/building-hero-tr.svg';
-import { ReactComponent as Logo} from '../assets/svg/hero-logo.svg';
+import { ReactComponent as Logo } from '../assets/svg/hero-logo.svg';
 
 const Hero = () => {
     return (
         <HeroWrapper>
-            <div className="application">
-                {/* <h1>
-                    <span>SD</span>
-                    <br />
-                    hacks
-                </h1>
-                <h2>February 19-21, 2021</h2> */}
-                <h3 className="mb-4">Completely Virtual</h3>
-                <Button
-                    size="lg"
-                    href="https://www.tesc.events/register/sdhacks2021"
-                    target="_blank"
-                    rel="noopener noreferrer"
-                >
-                    Apply Now
-                </Button>
-            </div>
+            <Container>
+                <Logo className="hero-logo" />
+                <div className="cta">
+                    <h1 className="mb-4">
+                        Completely
+                        <br />
+                        Virtual
+                    </h1>
+                    <Button
+                        size="lg"
+                        href="https://www.tesc.events/register/sdhacks2021"
+                        target="_blank"
+                        rel="noopener noreferrer"
+                    >
+                        Apply Now
+                    </Button>
+                </div>
+            </Container>
             <BuildingTR className="building-TR" />
             <BuildingTL className="building-TL" />
             <BuildingBR className="building-BR" />
             <BuildingBL className="building-BL" />
-            <Logo className="hero-center"/>
-        
         </HeroWrapper>
     );
 };
@@ -45,44 +44,38 @@ const HeroWrapper = styled.section`
     height: 85vh;
     min-height: 800px;
     background-color: var(--orange-light);
-    display: flex;
-    align-items: center;
     position: relative;
 
-    .application {
-        z-index: 1;
-        position: absolute;
-        bottom: 5%;
-        right: 20%;
+    .container {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+        height: 100%;
+    }
+
+    .hero-logo {
+        width: 40%;
 
         @media (max-width: 576px) {
-            bottom: 5%;
-            right: 5%;
-        }
-
-    }
-
-    h1 {
-        font-weight: 900;
-        font-size: clamp(5rem, 30vw, 11rem);
-        line-height: 0.6em;
-
-        span {
-            color: var(--orange);
-            position: relative;
-            left: 0.3em;
+            width: 70%;
         }
     }
 
-    h2 {
-        font-weight: 700;
-        font-size: clamp(1.5rem, 7vw, 3.75rem);
-        color: var(--orange);
+    .cta {
+        z-index: 1;
+        text-align: center;
+        margin-top: 1rem;
+
+        h1 {
+            font-weight: 800;
+            font-size: clamp(3rem, 30vw, 4rem);
+        }
     }
 
     .building-BR {
         position: absolute;
-        bottom: -10%;
+        bottom: -25%;
         right: 0;
         width: 20%;
         z-index: 1;
@@ -95,7 +88,7 @@ const HeroWrapper = styled.section`
     .building-BL {
         position: absolute;
         bottom: -5%;
-        left: 20%;
+        left: 10%;
         width: 18%;
         z-index: 1;
 
@@ -130,7 +123,7 @@ const HeroWrapper = styled.section`
     .building-TR {
         position: absolute;
         top: 6%;
-        right: 22%;
+        right: 10%;
         width: 18%;
 
         @media (max-width: 1375px) {
@@ -169,19 +162,6 @@ const HeroWrapper = styled.section`
 
         @media (max-width: 576px) {
             display: none;
-        }
-    }
-
-    .hero-center {
-        position: absolute;
-        margin-left: auto;
-        margin-right: auto;
-        right: 0%;
-        left: 0%;
-        width: 40%;
-
-        @media (max-width: 576px) {
-            width: 70%;
         }
     }
 `;
