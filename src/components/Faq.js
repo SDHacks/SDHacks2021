@@ -1,201 +1,169 @@
 import React from 'react';
 import { Container, Row, Col } from 'react-bootstrap';
 import styled from 'styled-components';
-import sdFaqData from '../data/SDHacksFAQ';
+import FaqData from '../data/SDHacksFAQ';
 
 const Faq = () => {
-    const data = sdFaqData;
-    return (  
+    return (
         <FaqWrapper>
             <Container>
-            <p>frequently asked </p>
-            <p className='ques'>QUESTIONS</p>
+                <h1 className="title">
+                    frequently asked
+                    <br />
+                    <span className="sub">QUESTIONS</span>
+                </h1>
 
-            <Row>
-                {data.map((obj,i) => (<Col md={6} xs={12} key={i}>
-                    <div className='card-wrapper'>
-                    <div className='card-main'>
-                    <div className="card-front">
-                    {obj.question}
-                         </div>
-                         <div className="card-back">
-                             <div className='back-q'>
-                             {obj.question}
-                             </div>
-                             {obj.answer}
-                         </div>
-                    </div>
-                    
-                    </div>
-                    </Col>))
-
-                }
-            </Row>
-
-
-           </Container>
-
+                <Row>
+                    {FaqData.map((obj, i) => (
+                        <Col
+                            lg={6}
+                            md={10}
+                            xs={12}
+                            key={i}
+                            className="card-col"
+                        >
+                            <div className="card-wrapper">
+                                <div className="card-main">
+                                    <div className="card-front">
+                                        <h2>{obj.question}</h2>
+                                    </div>
+                                    <div className="card-back">
+                                        <h2>{obj.question}</h2>
+                                        {obj.answer}
+                                    </div>
+                                </div>
+                            </div>
+                        </Col>
+                    ))}
+                </Row>
+            </Container>
         </FaqWrapper>
-      );
+    );
 };
 
 const FaqWrapper = styled.section`
-background: #D2F6FB;
-padding-top: 3rem;
-h1{
-  font-family: Trap;
-  font-style: normal;
-  font-weight: 900;
-  font-size: 40px;
-  line-height: 44px;
-  color: #191826;
+    background: #d2f6fb;
+    padding: 5rem 0;
 
-}
-p{
-  font-family: Trap;
-  font-style: normal;
-  font-weight: 900;
-  font-size: 48px;
-  line-height: 53px;
-  color: #181727;
-}
+    .title {
+        font-weight: 900;
+        font-size: clamp(2rem, 10vw, 3rem);
+        color: var(--dark);
+        margin-bottom: 3rem;
 
-.ques{
-  font-family: Trap;
-  font-style: normal;
-  font-weight: 900;
-  font-size: 48px;
-  line-height: 53px;
-  color: #44B5C5;
-     
-    
-}
+        span {
+            color: var(--cyan);
+        }
+    }
 
-.card-wrapper{
-  -webkit-backface-visibility: hidden;
-  -webkit-perspective: 1000;
-  perspective: 1000px;
-  font-family: Trap;
-  font-style: normal;
-  font-weight: 900;
-  font-size: 40px;
-  line-height: 44px;
-  color: #191826;
-}
+    .card-col {
+        min-height: 35rem;
+    }
 
+    .card-wrapper {
+        -webkit-backface-visibility: hidden;
+        -webkit-perspective: 1000;
+        perspective: 1000px;
+        height: 80%;
+        width: 85%;
+        margin-bottom: 5rem;
+    }
 
-.card-main {
-  position: relative;
-  width: 100%;
-  height: 100%;
-  text-align: center;
-  transition: transform 0.8s;
-  -webkit-transition: -webkit-transform 0.8s; 
-  transform-style: preserve-3d;
-  height: 20rem;
-  width: 30rem;
-  margin-bottom: 2rem;
-}
-  
+    .card-main {
+        position: relative;
+        width: 100%;
+        height: 100%;
+        transition: transform 0.8s;
+        -webkit-transition: -webkit-transform 0.8s;
+        transform-style: preserve-3d;
+    }
 
-.card-wrapper:hover .card-main {
-  transform: rotateY(180deg);
-}
+    .card-wrapper:hover .card-main {
+        transform: rotateY(180deg);
+    }
 
-.back-q{
-  font-family: Trap;
-  font-style: normal;
-  font-weight: 900;
-  font-size: 24px;
-  line-height: 26px;
-  padding-bottom: 1rem;
-  color: #44B5C5;
-}
+    .card-front {
+        display: flex;
+        place-items: center;
+        padding: 0 10%;
+        position: absolute;
+        width: 100%;
+        height: 100%;
+        -webkit-backface-visibility: hidden;
+        backface-visibility: hidden;
+        box-shadow: 15px 15px 0px 0px var(--dark);
+        background-color: var(--cyan);
 
-.card-front {
-  padding-right:4rem;
-  padding-left 3rem;
-  padding-top: 8rem;
-  text-align:left;
-  background: #44B5C5;
-  position: absolute;
-  width: 100%;
-  height: 100%;
-  -webkit-backface-visibility: hidden; 
-  backface-visibility: hidden;
-  -webkit-box-shadow: 8px 8px 0px 1px #000000; 
-  box-shadow: 10px 10px 0px 1px #000000;
-  background-color: #44B5C5;
-  color: black;
-}
+        h2 {
+            font-size: 2.5rem;
+            font-weight: 900;
+            color: var(--dark);
+        }
+    }
 
-.card-back {
-  padding-right:4rem;
-  padding-left 3rem;
-  padding-top: 2rem;
-  position: absolute;
-  width: 100%;
-  height: 100%;
-  -webkit-backface-visibility: hidden; 
-  backface-visibility: hidden;
-  text-align:left;
-  font-family: Trap;
-  font-style: normal;
-  font-weight: normal;
-  font-size: 18px;
-  line-height: 20px;
-  background-color: #181727;
-  color: white;
-  transform: rotateY(180deg);
-  box-shadow: 10px 10px 0px 1px #44B5C5;
-}
+    .card-back {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        padding: 0 10%;
+        position: absolute;
+        width: 100%;
+        height: 100%;
+        -webkit-backface-visibility: hidden;
+        backface-visibility: hidden;
+        background-color: #181727;
+        transform: rotateY(180deg);
+        box-shadow: 15px -15px 0px 0px var(--cyan);
 
+        h2 {
+            font-size: clamp(1.3rem, 2vw, 1.5rem);
+            font-weight: 900;
+            color: var(--cyan);
+            margin-bottom: 1rem;
+        }
 
+        p {
+            font-size: clamp(1rem, 1.5vw, 18px);
+            color: white;
+            margin-bottom: 0;
 
+            a {
+                color: var(--cyan);
+            }
+        }
 
+        p + p {
+            margin-top: 1rem;
+        }
+    }
 
-@media only screen and (max-width: 800px) {
-  .card-main {
-    height: 20rem;
-    width: 20rem;
-    background: #44B5C5;
-    margin-bottom: 2rem;
-  }
-  .card-front {
-    padding-right:4rem;
-    padding-left 3rem;
-    padding-top: 4rem;
-  }
+    @media only screen and (max-width: 768px) {
+        .card-wrapper {
+            width: 95%;
+        }
+    }
 
-  .card-back {
-    padding-right:1rem;
-    padding-left 1rem;
-    padding-top: 2rem;
-    font-size: 16px;
-  }
-}
+    /* @media only screen and (max-width: 1200px) {
+        .card-main {
+            height: 20rem;
+            width: 20rem;
+            background: #44b5c5;
+            margin-bottom: 2rem;
+        }
 
-@media only screen and (max-width: 1200px) {
-  .card-main {
-    height: 20rem;
-    width: 20rem;
-    background: #44B5C5;
-    margin-bottom: 2rem;
-  }
+        .card-front {
+            padding-right: 4rem;
+            padding-left: 3rem;
+            padding-top: 4rem;
+        }
 
-  .card-front {
-    padding-right:4rem;
-    padding-left 3rem;
-    padding-top: 4rem;
-  }
-
-  .card-back {
-    padding-right:1rem;
-    padding-left 1rem;
-    padding-top: 2rem;
-    font-size: 16px;
-  }
-}
+        .card-back {
+            padding-right: 1rem;
+            padding-left: 1rem;
+            padding-top: 2rem;
+            font-size: 16px;
+        }
+    } */
 `;
 
 export default Faq;
