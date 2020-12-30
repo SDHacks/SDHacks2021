@@ -1,9 +1,0 @@
-<svg width="286" height="287" viewBox="0 0 286 287" fill="none" xmlns="http://www.w3.org/2000/svg">
-<defs>
-    <pattern id="image" x="0" y="0" patternUnits="userSpaceOnUse" height="200" width="200">
-      <image x="100" y="1000" href="current"></image>
-    </pattern>
-  </defs>
-<ellipse cx="143" cy="143.5" rx="143" ry="143.5" style="fill:url(#image)"/>
-<path fill-rule="evenodd" clip-rule="evenodd" d="M8 190C27.6051 245.909 80.8466 286 143.452 286C206.057 286 259.299 245.909 278.904 190H8Z" fill="white"/>
-</svg>
