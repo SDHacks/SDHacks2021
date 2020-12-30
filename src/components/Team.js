@@ -1,136 +1,88 @@
-import React, {Component} from 'react';
-import { Container, Row, Col} from 'react-bootstrap';
+import React from 'react';
+import { Container, Row, Col } from 'react-bootstrap';
 import styled from 'styled-components';
-import circle from "../assets/Team/circle.svg"
+import 'styled-components/macro';
 
-import Anurag from "../assets/Team/Anurag.jpg"
-import Johnny from "../assets/Team/Johnny.png"
-import Oscar from "../assets/Team/Oscar.jpeg"
-import Sid from "../assets/Team/Roof Pic - Siddharth Nag.jpg"
-import Sarayu from "../assets/Team/slide-text-bg.png"
-import Shin from "../assets/Team/Shin.jpeg"
-import Suditi from "../assets/Team/Suditi.jpg"
-import Building_tl from "../assets/svg/building-footer-tl.svg"
+import teamData from '../data/teamData';
+import Building from '../assets/svg/building-footer-tl.svg';
 
 const Team = () => {
-        const desStyle = {
-                color: "black",
-                'font-weight': '600',
-                'font-size': '70%',
-                'line-height': '15px'
-        };
-
-        return (
-                <TeamSection>
-                        <TeamHeader>meet the <span style={{color: "#81CB72"}}>team</span></TeamHeader>
-                        <TeamContainer fluid>
-                                <TeamRow xl={4} md={1} sm={1} xs={1}>
-                                        <TeamCol />
-                                        <TeamCol>
-                                                <MemberContainer>
-                                                        <Member src={Sid}/>
-                                                        <Description>Siddharth Nag<br/><span style={desStyle}>SD Hacks Co-Director</span></Description>
-                                                </MemberContainer>
-                                        </TeamCol>
-                                        <TeamCol>
-                                                <MemberContainer>
-                                                        <Member src={Anurag}/>
-                                                        <Description>Anurag Pamuru<br/><span style={desStyle}>SD Hacks Co-Director</span></Description>
-                                                </MemberContainer>
-                                        </TeamCol>
-                                </TeamRow>
-                                <Building src={Building_tl} />
-                                <TeamRow xl={4} md={1} sm={1} xs={1}>
-                                        <TeamCol />
-                                        <TeamCol>
-                                                <MemberContainer>
-                                                        <Member src={Johnny}/><Description fluid="md">Johnny Nguyen</Description>
-                                                </MemberContainer>
-                                        </TeamCol>
-                                        <TeamCol>
-                                                <MemberContainer>
-                                                        <Member src={Oscar}/><Description fluid>Oscar Acevado</Description>
-                                                </MemberContainer>
-                                        </TeamCol>
-                                </TeamRow>
-                                <TeamRow xl={4} md={1} sm={1} xs={1}>
-                                        <TeamCol />
-                                        <TeamCol>
-                                                        <MemberContainer>
-                                                                <Member src={Sarayu}/><Description fluid>Sarayu Pai</Description>
-                                                        </MemberContainer>
-                                        </TeamCol>
-                                        <TeamCol>
-                                                <MemberContainer>
-                                                        <Member src={Shin}/><Description fluid>Shin Ehara</Description>
-                                                </MemberContainer>
-                                        </TeamCol>
-                                       
-                                </TeamRow>
-                                <TeamRow xl={4} md={1} sm={1} xs={1}>
-                                        <TeamCol />
-                                        <TeamCol>
-                                                <MemberContainer>
-                                                        <Member src={Suditi}/><Description fluid>Suditi Bhatt</Description>
-                                                </MemberContainer>
-                                        </TeamCol>
-                                </TeamRow>
-                        </TeamContainer>
-                </TeamSection>
-        );
-}
-
+    return (
+        <TeamSection>
+            <Container>
+                <TeamHeader>
+                    meet the <span style={{ color: '#81CB72' }}>team</span>
+                </TeamHeader>
+                <Row lg={3} xs={1} className="justify-content-center">
+                    {teamData.map(({ img, name, position }, i) => (
+                        <Col key={i}>
+                            <Profile>
+                                <img src={img} alt={name} width="100%" />
+                                <div className="profile-content">
+                                    <h1>{name}</h1>
+                                    {position && <h2>{position}</h2>}
+                                </div>
+                            </Profile>
+                        </Col>
+                    ))}
+                </Row>
+            </Container>
+            <img
+                src={Building}
+                alt=""
+                css={`
+                    position: absolute;
+                    bottom: 0;
+                `}
+            />
+        </TeamSection>
+    );
+};
 
 const TeamSection = styled.section`
-        background-color: #191826;
-        width: 100%;
-        font-family: Trap, sans-serif;
+    background-color: var(--dark);
+    position: relative;
 `;
+
 const TeamHeader = styled.h1`
-        color: white;
-        margin-bottom: 1.5em;
-        padding-top: 5%;
-        text-align: center;
-        font-style: normal;
-        font-weight: 900;
-        font-size: 48px;
-        line-height: 53px;
-`;
-const TeamContainer = styled(Container)`
+    color: white;
+    margin-bottom: 1.5em;
+    text-align: center;
+    font-weight: 900;
+    font-size: 3rem;
 `;
 
-const TeamRow = styled(Row)`
-        color: #81CB72;
-`;
-const TeamCol = styled(Col)`
-        margin-bottom: 2%;
-`;
+const Profile = styled.div`
+    position: relative;
+    text-align: center;
+    border-radius: 100%;
+    overflow: hidden;
+    width: 20rem;
+    height: 20rem;
+    margin: 3rem auto;
+    z-index: 1;
 
-const MemberContainer = styled(Container)`
-        position: relative;
-`;
-const Member = styled.img`
-        height: auto;
-        max-width: 100%;
-        border-radius: 50%;
-`;
-const Description = styled(Container)`
-        background-color: white;
+    .profile-content {
+        width: 100%;
         position: absolute;
         bottom: 0;
         text-align: center;
-        font-weight: 900;
-        font-size: 0.8em;
-        padding-top: 2%;
-        width: auto;
-        height: 30%;
-`;
+        background: white;
+        height: 25%;
+        padding-top: 0.5rem;
 
-const Building = styled.img`
-        max-width: 30%;
-        height: auto;
-        position: absolute;
-        left: 0;
+        h1 {
+            font-size: 18px;
+            font-weight: 900;
+            color: var(--green);
+            margin-bottom: 2px;
+        }
+
+        h2 {
+            font-size: 14px;
+            color: var(--dark);
+        }
+    }
 `;
 
 export default Team;
