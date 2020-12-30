@@ -142,28 +142,6 @@ const FaqWrapper = styled.section`
             width: 95%;
         }
     }
-
-    /* @media only screen and (max-width: 1200px) {
-        .card-main {
-            height: 20rem;
-            width: 20rem;
-            background: #44b5c5;
-            margin-bottom: 2rem;
-        }
-
-        .card-front {
-            padding-right: 4rem;
-            padding-left: 3rem;
-            padding-top: 4rem;
-        }
-
-        .card-back {
-            padding-right: 1rem;
-            padding-left: 1rem;
-            padding-top: 2rem;
-            font-size: 16px;
-        }
-    } */
 `;
 
 export default Faq;
