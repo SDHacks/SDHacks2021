@@ -60,6 +60,7 @@ const Profile = styled.div`
     width: 20rem;
     height: 20rem;
     margin: 3rem auto;
+    z-index: 1;
 
     .profile-content {
         width: 100%;
