@@ -3,6 +3,9 @@ import { Container, Row, Col } from 'react-bootstrap';
 import styled from 'styled-components';
 import FaqData from '../data/SDHacksFAQ';
 
+import Landscape from '../assets/svg/landscape.svg';
+import Train from '../assets/svg/train-3.svg';
+
 const Faq = () => {
     return (
         <FaqWrapper>
@@ -37,13 +40,17 @@ const Faq = () => {
                     ))}
                 </Row>
             </Container>
+
+            <img src={Landscape} alt="" className="landscape-img" />
+            <img src={Train} alt="" className="train-img" />
         </FaqWrapper>
     );
 };
 
 const FaqWrapper = styled.section`
     background: #d2f6fb;
-    padding: 5rem 0;
+    padding: 5rem 0 0 0;
+    position: relative;
 
     .title {
         font-weight: 900;
@@ -141,6 +148,22 @@ const FaqWrapper = styled.section`
         .card-wrapper {
             width: 95%;
         }
+    }
+
+    .landscape-img {
+        position: relative;
+        bottom: -80px;
+        width: 100%;
+        user-drag: none;
+        user-select: none;
+    }
+
+    .train-img {
+        position: absolute;
+        bottom: -35px;
+        left: 0;
+        user-drag: none;
+        user-select: none;
     }
 `;
 

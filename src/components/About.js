@@ -107,7 +107,7 @@ const Title = styled.h1`
 `;
 
 const Description = styled.p`
-    font-weight: 300;
+    font-weight: 400;
     font-size: 1em;
     line-height: 160%;
     margin-bottom: 2rem;
