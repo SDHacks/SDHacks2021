@@ -1,6 +1,7 @@
 import React from 'react';
 import { Container, Row, Col } from 'react-bootstrap';
 import styled from 'styled-components';
+import Slide from 'react-reveal/Slide';
 import FaqData from '../data/SDHacksFAQ';
 
 import Landscape from '../assets/svg/landscape.svg';
@@ -42,7 +43,9 @@ const Faq = () => {
             </Container>
 
             <img src={Landscape} alt="" className="landscape-img" />
-            <img src={Train} alt="" className="train-img" />
+            <Slide left duration={2500}>
+                <img src={Train} alt="" className="train-img" />
+            </Slide>
         </FaqWrapper>
     );
 };
@@ -154,7 +157,6 @@ const FaqWrapper = styled.section`
         position: relative;
         bottom: -80px;
         width: 100%;
-        user-drag: none;
         user-select: none;
     }
 
@@ -162,7 +164,6 @@ const FaqWrapper = styled.section`
         position: absolute;
         bottom: -35px;
         left: 0;
-        user-drag: none;
         user-select: none;
     }
 `;

@@ -1,41 +1,45 @@
 import React from 'react';
 import { Container, Button } from 'react-bootstrap';
 import styled from 'styled-components';
+import { Fade, Slide } from 'react-reveal';
 
-// import { ReactComponent as Train } from '../assets/svg/train-1.svg';
-// import { ReactComponent as Trees } from '../assets/svg/trees.svg';
-
-import { ReactComponent as BuildingBR } from '../assets/svg/building-hero-br.svg';
-import { ReactComponent as BuildingBL } from '../assets/svg/building-hero-bl.svg';
-import { ReactComponent as BuildingTL } from '../assets/svg/building-hero-tl.svg';
-import { ReactComponent as BuildingTR } from '../assets/svg/building-hero-tr.svg';
-import { ReactComponent as Logo } from '../assets/svg/hero-logo.svg';
+import BuildingBR from '../assets/svg/building-hero-br.svg';
+import BuildingBL from '../assets/svg/building-hero-bl.svg';
+import BuildingTL from '../assets/svg/building-hero-tl.svg';
+import BuildingTR from '../assets/svg/building-hero-tr.svg';
+import Logo from '../assets/svg/hero-logo.svg';
 
 const Hero = () => {
     return (
         <HeroWrapper>
             <Container>
-                <Logo className="hero-logo" />
-                <div className="cta">
-                    <h1 className="mb-4">
-                        Completely
-                        <br />
-                        Virtual
-                    </h1>
-                    <Button
-                        size="lg"
-                        href="https://www.tesc.events/register/sdhacks2021"
-                        target="_blank"
-                        rel="noopener noreferrer"
-                    >
-                        Apply Now
-                    </Button>
-                </div>
+                <Fade>
+                    <img src={Logo} alt="logo" className="hero-logo" />
+                    <div className="cta">
+                        <h1 className="mb-4">
+                            Completely
+                            <br />
+                            Virtual
+                        </h1>
+                        <Button
+                            size="lg"
+                            href="https://www.tesc.events/register/sdhacks2021"
+                            target="_blank"
+                            rel="noopener noreferrer"
+                        >
+                            Apply Now
+                        </Button>
+                    </div>
+                </Fade>
             </Container>
-            <BuildingTR className="building-TR" />
-            <BuildingTL className="building-TL" />
-            <BuildingBR className="building-BR" />
-            <BuildingBL className="building-BL" />
+            <Slide right>
+                <img src={BuildingTR} className="building-TR" alt="" />
+                <img src={BuildingBR} className="building-BR" alt="" />
+            </Slide>
+            <Slide left>
+                <img src={BuildingBL} className="building-BL" alt="" />
+                <img src={BuildingTL} className="building-TL" alt="" />
+            </Slide>
         </HeroWrapper>
     );
 };
