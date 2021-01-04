@@ -9,7 +9,7 @@ import { ReactComponent as Civic } from '../assets/icons/civic.svg';
 
 const Tracks = () => {
     return (
-        <TracksSection className="tracks">
+        <TracksSection>
             <StyledContainer>
                 <Row>
                     <Col xl={5} lg={6}>
@@ -21,24 +21,48 @@ const Tracks = () => {
                     </Col>
                     <Col>
                         <TracksCard>
-                            <div>TRACK 1</div>
-                            <span>remote education</span>
-                            <Learning />
+                            <Row>
+                                <Col md="8">
+                                    <div className="track-num">TRACK 1</div>
+                                    <div className="track-name">remote education</div>
+                                </Col>
+                                <Col>
+                                    <Learning />
+                                </Col>
+                            </Row>
                         </TracksCard>
                         <TracksCard>
-                            <div>TRACK 2</div>
-                            <span>sustainability</span>
-                            <Sustainability />
+                            <Row>
+                                <Col md="8">
+                                    <div className="track-num">TRACK 2</div>
+                                    <div className="track-name">sustainability</div>
+                                </Col>
+                                <Col>
+                                    <Sustainability />
+                                </Col>
+                            </Row>
                         </TracksCard>
                         <TracksCard>
-                            <div>TRACK 3</div>
-                            <span>urban innovation</span>
-                            <Urban />
+                            <Row>
+                                <Col md="8">
+                                    <div className="track-num">TRACK 3</div>
+                                    <div className="track-name">urban innovation</div>
+                                </Col>
+                                <Col>
+                                    <Urban />
+                                </Col>
+                            </Row>
                         </TracksCard>
                         <TracksCard>
-                            <div>TRACK 4</div>
-                            <span>civic engagement</span>
-                            <Civic />
+                            <Row>
+                                <Col md="8">
+                                    <div className="track-num">TRACK 4</div>
+                                    <div className="track-name">civic engagement</div>
+                                </Col>
+                                <Col>
+                                    <Civic />
+                                </Col>
+                            </Row>
                         </TracksCard>
                     </Col>
                 </Row>
@@ -50,6 +74,7 @@ const Tracks = () => {
 const TracksSection = styled.section`
     background-color: var(--gray);
     min-height: 80em;
+    position: relative;
 `;
 
 const StyledContainer = styled(Container)`
@@ -80,28 +105,29 @@ const TracksCard = styled.div`
 
     border: 0.5em solid;
     border-radius: 1.5em;
-    max-width: 43.625em;
     padding-top: 1.5em;
-    padding-bottom: 0.25em;
-    padding-left: 2em;
+    padding-bottom: 1em;
     margin-bottom: 2.5em;
 
-    div {
+    .track-num {
         color: var(--gray);
         font-size: 1em;
-        line-height: 1.3em;
 
         background-color: var(--green);
-        border-radius: 0.4em;
+        border-top-left-radius: 0;
+        border-bottom-left-radius: 0;
+        border-top-right-radius: 0.4em;
+        border-bottom-right-radius: 0.4em;
+        
         width: 5em;
         text-align: center;
     }
 
-    span {
+    .track-name {
         font-size: 2em;
         text-shadow: 0px 6px #201F26;
 
-        margin-right: 1em;
+        margin-left: 1em;
     }
 `;
 
