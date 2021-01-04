@@ -52,7 +52,7 @@ const Faq = () => {
 
 const FaqWrapper = styled.section`
     background: #d2f6fb;
-    padding: 5rem 0 0 0;
+    padding: 42rem 0 0 0;
     position: relative;
 
     .title {

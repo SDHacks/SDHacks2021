@@ -3,6 +3,7 @@ import { withRouter } from 'react-router-dom';
 
 import Hero from './components/Hero';
 import About from './components/About';
+import Tracks from './components/Tracks';
 import Faq from './components/Faq';
 import Sponsors from './components/Sponsors';
 import Team from './components/Team';
@@ -13,6 +14,7 @@ class SDHacksPage extends Component {
             <>
                 <Hero />
                 <About />
+                <Tracks />
                 <Faq />
                 <Sponsors />
                 <Team />
