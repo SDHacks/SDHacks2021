@@ -3,7 +3,7 @@ import { Navbar, Nav, Container } from 'react-bootstrap';
 import 'styled-components/macro';
 import $ from 'jquery';
 
-import Logo from '../assets/logo.svg';
+import Logo from '../assets/svg/logo.svg';
 
 const Header = () => {
     const navLinks = useMemo(

@@ -2,9 +2,9 @@ import React from 'react';
 import { Container, Button } from 'react-bootstrap';
 import styled from 'styled-components';
 
-import { ReactComponent as Building } from '../assets/building-hero.svg';
-import { ReactComponent as Train } from '../assets/train.svg';
-import { ReactComponent as Trees } from '../assets/trees.svg';
+import { ReactComponent as Building } from '../assets/svg/building-hero.svg';
+import { ReactComponent as Train } from '../assets/svg/train.svg';
+import { ReactComponent as Trees } from '../assets/svg/trees.svg';
 
 const Hero = () => {
     return (

@@ -7,6 +7,10 @@ import { ReactComponent as Sustainability } from '../assets/icons/sustainability
 import { ReactComponent as Urban } from '../assets/icons/urban.svg';
 import { ReactComponent as Civic } from '../assets/icons/civic.svg';
 
+import { ReactComponent as Building } from '../assets/svg/building-jacobs.svg';
+import { ReactComponent as Train } from '../assets/svg/train-2.svg';
+import { ReactComponent as Bridge } from '../assets/svg/bridge.svg';
+
 const Tracks = () => {
     return (
         <TracksSection>
@@ -67,14 +71,31 @@ const Tracks = () => {
                     </Col>
                 </Row>
             </StyledContainer>
+            <Building className="building-img" />
+            <Train className="train-img" />
+            <Bridge className="bridge-img" />
         </TracksSection>
     );
 };
 
 const TracksSection = styled.section`
     background-color: var(--gray);
-    min-height: 80em;
     position: relative;
+    z-index: -2;
+
+    .building-img {
+        position: absolute;
+        top: 22em;
+        left: 7em;
+        z-index: -1;
+    }
+
+    .train-img {
+        position: absolute;
+        top: 49em;
+        left: 0em;
+        z-index: -1;
+    }
 `;
 
 const StyledContainer = styled(Container)`
