@@ -30,7 +30,7 @@ const Tracks = () => {
                                     <div className="track-num">TRACK 1</div>
                                     <div className="track-name">remote education</div>
                                 </Col>
-                                <Col>
+                                <Col className="svg">
                                     <Learning />
                                 </Col>
                             </Row>
@@ -41,7 +41,7 @@ const Tracks = () => {
                                     <div className="track-num">TRACK 2</div>
                                     <div className="track-name">sustainability</div>
                                 </Col>
-                                <Col>
+                                <Col className="svg">
                                     <Sustainability />
                                 </Col>
                             </Row>
@@ -52,7 +52,7 @@ const Tracks = () => {
                                     <div className="track-num">TRACK 3</div>
                                     <div className="track-name">urban innovation</div>
                                 </Col>
-                                <Col>
+                                <Col className="svg">
                                     <Urban />
                                 </Col>
                             </Row>
@@ -63,7 +63,7 @@ const Tracks = () => {
                                     <div className="track-num">TRACK 4</div>
                                     <div className="track-name">civic engagement</div>
                                 </Col>
-                                <Col>
+                                <Col className="svg">
                                     <Civic />
                                 </Col>
                             </Row>
@@ -81,20 +81,28 @@ const Tracks = () => {
 const TracksSection = styled.section`
     background-color: var(--gray);
     position: relative;
-    z-index: -2;
+    padding: 5em 0 0 0;
+    min-height: 60em;
 
     .building-img {
         position: absolute;
-        top: 22em;
+        top: 27em;
         left: 7em;
-        z-index: -1;
+        z-index: 1;
     }
 
     .train-img {
         position: absolute;
-        top: 49em;
+        top: 54em;
         left: 0em;
-        z-index: -1;
+        z-index: 2;
+    }
+
+    .bridge-img {
+        position: absolute;
+        top: 54em;
+        left: 0em;
+        z-index: 3;
     }
 `;
 
@@ -149,6 +157,12 @@ const TracksCard = styled.div`
         text-shadow: 0px 6px #201F26;
 
         margin-left: 1em;
+    }
+
+    .svg {
+        display: flex;
+        justify-content: center;
+        align-items: center;
     }
 `;
 
