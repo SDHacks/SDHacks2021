@@ -2,6 +2,9 @@ import React from 'react';
 import { Container, Row, Col } from 'react-bootstrap';
 import styled from 'styled-components';
 
+import { ReactComponent as Train } from '../assets/svg/train-1.svg';
+import { ReactComponent as Trees } from '../assets/svg/trees.svg';
+
 const About = () => {
     return (
         <AboutSection className="about">
@@ -35,19 +38,60 @@ const About = () => {
                     </Col>
                 </Row>
             </StyledContainer>
+            <Train className="train" />
+            <Trees className="trees" />
         </AboutSection>
     );
 };
 
 const AboutSection = styled.section`
-    background-color: #393744;
+    background-color: var(--orange-light);
+    position: relative;
+
+    .train {
+        position: absolute;
+        bottom: 0%;
+        left: 0%;
+        width: 100%;
+
+        @media (max-width: 576px) {
+            display: none;
+        }
+    }
+
+    .trees {
+        position: absolute;
+        bottom: -5%;
+        right: 0%;
+        width: 40%;
+
+        @media (max-width: 1375px) {
+            bottom: -7%;
+        }
+
+        @media (max-width: 920px) {
+            bottom: -8%;
+        }
+
+        @media (max-width: 800px) {
+            bottom: -9%;
+        }
+
+        @media (max-width: 576px) {
+            display: none;
+        }
+    }
 `;
 
 const StyledContainer = styled(Container)`
-    color: white;
-    padding-top: 5rem;
-    padding-bottom: 5rem;
+    color: var(--dark);
     font-family: Trap, sans-serif;
+    padding-top: 10rem;
+    padding-bottom: 18rem;
+
+    @media (max-width: 576px) {
+        padding-bottom: 15rem;
+    }
 `;
 
 const Title = styled.h1`
@@ -63,7 +107,7 @@ const Title = styled.h1`
 `;
 
 const Description = styled.p`
-    font-weight: 300;
+    font-weight: 400;
     font-size: 1em;
     line-height: 160%;
     margin-bottom: 2rem;
