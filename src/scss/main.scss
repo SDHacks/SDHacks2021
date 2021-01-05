@@ -11,3 +11,25 @@
 img {
     -webkit-user-drag: none;
 }
+
+// overriding Bootstrap modal style for Tracks section
+// some properties overriden in _variables.scss
+.fade.modal {
+    display: flex !important ;
+    align-items: center;
+
+    .modal-header {
+        padding: 3rem;
+        padding-bottom: 0;
+
+        .modal-title {
+            font-size: 3rem;
+            font-weight: 900;
+        }
+    }
+
+    .modal-body {
+        padding-top: 1rem;
+        font-size: 18px;
+    }
+}

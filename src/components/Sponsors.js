@@ -60,7 +60,7 @@ function renderSponsors(currSponsors) {
 
 const Sponsors = () => {
     return (
-        <SponsorsSection>
+        <SponsorsSection className="sponsors">
             <Container>
                 <SectionContent>
                     <SectionHeader>

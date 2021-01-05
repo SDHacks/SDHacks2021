@@ -2,15 +2,24 @@ import React from 'react';
 import { Container, Row, Col } from 'react-bootstrap';
 import styled from 'styled-components';
 import Slide from 'react-reveal/Slide';
+import { Parallax } from 'react-scroll-parallax';
 import FaqData from '../data/SDHacksFAQ';
 
+import TrainTop from '../assets/svg/train-2.svg';
+import Bridge from '../assets/svg/bridge.svg';
 import Landscape from '../assets/svg/landscape.svg';
-import Train from '../assets/svg/train-3.svg';
+import TrainBottom from '../assets/svg/train-3.svg';
 
 const Faq = () => {
     return (
         <FaqWrapper>
-            <Container>
+            <div className="train-bridge-container">
+                <img src={TrainTop} alt="" className="train-t-img" />
+                <Parallax y={[-10, 5]} className="bridge-img" tagOuter="figure">
+                    <img src={Bridge} alt="" width="100%" />
+                </Parallax>
+            </div>
+            <Container className="faq mt-5">
                 <h1 className="title">
                     frequently asked
                     <br />
@@ -44,7 +53,7 @@ const Faq = () => {
 
             <img src={Landscape} alt="" className="landscape-img" />
             <Slide left duration={2500}>
-                <img src={Train} alt="" className="train-img" />
+                <img src={TrainBottom} alt="" className="train-b-img" />
             </Slide>
         </FaqWrapper>
     );
@@ -52,7 +61,6 @@ const Faq = () => {
 
 const FaqWrapper = styled.section`
     background: #d2f6fb;
-    padding: 42rem 0 0 0;
     position: relative;
 
     .title {
@@ -153,6 +161,23 @@ const FaqWrapper = styled.section`
         }
     }
 
+    .train-bridge-container {
+        position: relative;
+        top: -60px;
+        z-index: 1;
+    }
+
+    .train-t-img {
+        position: absolute;
+        top: -5px;
+        left: -35px;
+        width: 65%;
+    }
+
+    .bridge-img {
+        position: relative;
+    }
+
     .landscape-img {
         position: relative;
         bottom: -80px;
@@ -160,7 +185,7 @@ const FaqWrapper = styled.section`
         user-select: none;
     }
 
-    .train-img {
+    .train-b-img {
         position: absolute;
         bottom: -35px;
         left: 0;

@@ -4,6 +4,7 @@ import Oscar from '../assets/team/Oscar.jpeg';
 import Sid from '../assets/team/Sid.jpg';
 import Shin from '../assets/team/Shin.jpeg';
 import Suditi from '../assets/team/Suditi.jpg';
+import Sarayu from '../assets/team/Sarayu.jpg';
 
 const teamData = [
     {
@@ -31,6 +32,10 @@ const teamData = [
     {
         img: Suditi,
         name: 'Suditi Bhatt',
+    },
+    {
+        img: Sarayu,
+        name: 'Sarayu Pai',
     },
 ];
 

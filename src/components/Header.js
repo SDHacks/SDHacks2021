@@ -7,19 +7,16 @@ import Logo from '../assets/logo-header.png';
 
 const Header = () => {
     const navLinks = useMemo(
-        () => [
-            { name: 'about', href: '#about', className: 'about' },
-            { name: 'contact', href: '#contact', className: 'contact' },
-        ],
+        () => ['about', 'tracks', 'faq', 'sponsors', 'contact'],
         []
     );
 
     useEffect(() => {
-        navLinks.forEach(({ href, className }) => {
-            $(`a[href='${href}']`).on('click', () => {
+        navLinks.forEach((name) => {
+            $(`a[href='#${name}']`).on('click', () => {
                 $('html,body').animate(
                     {
-                        scrollTop: $(`.${className}`).offset().top,
+                        scrollTop: $(`.${name}`).offset().top,
                     },
                     'slow'
                 );
@@ -55,8 +52,8 @@ const Header = () => {
                 <Navbar.Toggle aria-controls="navbar-nav" />
                 <Navbar.Collapse id="navbar-nav">
                     <Nav className="ml-auto">
-                        {navLinks.map(({ name, href }, i) => (
-                            <Nav.Link href={href} key={i}>
+                        {navLinks.map((name, i) => (
+                            <Nav.Link href={`#${name}`} key={i}>
                                 {name}
                             </Nav.Link>
                         ))}

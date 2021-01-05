@@ -5,7 +5,7 @@ $theme-colors: (
     'green': #81cb72,
     'dark': #191826,
     'primary': #e15c35,
-    'gray': #393744
+    'gray': #393744,
 );
 
 $container-max-widths: (
@@ -28,6 +28,12 @@ $navbar-light-color: theme-color('orange');
 $navbar-light-hover-color: theme-color('dark');
 
 $navbar-light-brand-color: $navbar-light-color;
+
+$modal-inner-padding: 3rem;
+$modal-content-bg: theme-color('green');
+$modal-header-border-width: 0;
+$modal-content-border-radius: 26px;
+$modal-fade-transform: none;
 
 @import '../../node_modules/bootstrap/scss/bootstrap';
 

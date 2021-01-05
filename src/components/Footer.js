@@ -8,7 +8,7 @@ import BuildingRight from '../assets/svg/building-footer-r.svg';
 
 const Footer = () => {
     return (
-        <StyledFooter className="">
+        <StyledFooter className="contact">
             <Container>
                 <p>
                     have any questions?

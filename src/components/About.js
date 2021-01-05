@@ -112,7 +112,6 @@ const Title = withReveal(
         span {
             color: var(--orange);
             font-weight: 900;
-            font-size: 1em;
         }
     `,
     <Slide left />
