@@ -102,6 +102,7 @@ const HeroWrapper = styled.section`
         left: 10%;
         width: 18%;
         z-index: 1;
+        animation: float 5s ease 2s infinite;
 
         @media (max-width: 1375px) {
             width: 20%;
@@ -136,6 +137,7 @@ const HeroWrapper = styled.section`
         top: 6%;
         right: 10%;
         width: 18%;
+        animation: float 5s infinite;
 
         @media (max-width: 1375px) {
             width: 20%;
@@ -173,6 +175,20 @@ const HeroWrapper = styled.section`
 
         @media (max-width: 576px) {
             display: none;
+        }
+    }
+
+    @keyframes float {
+        from {
+            transform: translateY(0px);
+        }
+
+        50% {
+            transform: translateY(20px);
+        }
+
+        to {
+            transform: translateY(0);
         }
     }
 `;
