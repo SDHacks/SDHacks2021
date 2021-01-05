@@ -8,6 +8,7 @@ import BuildingBL from '../assets/svg/building-hero-bl.svg';
 import BuildingTL from '../assets/svg/building-hero-tl.svg';
 import BuildingTR from '../assets/svg/building-hero-tr.svg';
 import Logo from '../assets/svg/hero-logo.svg';
+import { Parallax } from 'react-scroll-parallax';
 
 const Hero = () => {
     return (
@@ -32,12 +33,18 @@ const Hero = () => {
                     </div>
                 </Fade>
             </Container>
+
+            <Parallax className="building-TR" y={[100, 0]}>
+                <img src={BuildingTR} alt="" />
+            </Parallax>
             <Slide right>
-                <img src={BuildingTR} className="building-TR" alt="" />
-                <img src={BuildingBR} className="building-BR" alt="" />
+                <img src={BuildingBR} alt="" className="building-BR" />
             </Slide>
+
+            <Parallax className="building-BL" y={[0, 50]}>
+                <img src={BuildingBL} alt="" />
+            </Parallax>
             <Slide left>
-                <img src={BuildingBL} className="building-BL" alt="" />
                 <img src={BuildingTL} className="building-TL" alt="" />
             </Slide>
         </HeroWrapper>
