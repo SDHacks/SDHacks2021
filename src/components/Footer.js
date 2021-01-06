@@ -20,13 +20,13 @@ const Footer = () => {
                 </p>
                 <div className="logo-wrapper">
                     <h1 className="">TESC</h1>
-                    <h2 className="">
+                    <h2 className="text-center text-md-left">
                         triton engineering
                         <br />
                         student council
                     </h2>
                 </div>
-                <img src={BuildingBottom} alt="" />
+                <img src={BuildingBottom} alt="" width="25%" />
                 <img
                     src={BuildingRight}
                     alt=""
@@ -34,6 +34,7 @@ const Footer = () => {
                         position: absolute;
                         right: 0;
                         top: -150px;
+                        width: 20%;
                     `}
                 />
             </Container>

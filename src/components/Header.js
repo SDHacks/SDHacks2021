@@ -31,9 +31,18 @@ const Header = () => {
     return (
         <Navbar
             bg="orange-light"
-            expand="sm"
+            expand="lg"
             css={`
                 font-weight: 900;
+                font-size: 18px;
+
+                .navbar-brand img {
+                    margin-left: 45px;
+
+                    @media (max-width: 576px) {
+                        height: 25px;
+                    }
+                }
 
                 .navbar-nav {
                     margin-right: 9rem;
@@ -46,7 +55,7 @@ const Header = () => {
             `}
         >
             <Container>
-                <Navbar.Brand href="#" className="mx-auto mr-md-auto">
+                <Navbar.Brand href="#home" className="mx-auto mr-md-auto">
                     <img src={Logo} alt="logo" height="40" />
                 </Navbar.Brand>
                 <Navbar.Toggle aria-controls="navbar-nav" />
@@ -60,6 +69,19 @@ const Header = () => {
                     </Nav>
                 </Navbar.Collapse>
             </Container>
+
+            <a
+                id="mlh-trust-badge"
+                href="https://mlh.io/seasons/2021/events?utm_source=na-hackathon&utm_medium=TrustBadge&utm_campaign=2021-season&utm_content=black"
+                target="_blank"
+                rel="noreferrer noopener"
+            >
+                <img
+                    src="https://s3.amazonaws.com/logged-assets/trust-badge/2021/mlh-trust-badge-2021-black.svg"
+                    alt="Major League Hacking 2021 Hackathon Season"
+                    width="100%"
+                />
+            </a>
         </Navbar>
     );
 };

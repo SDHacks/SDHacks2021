@@ -15,7 +15,7 @@ const Team = () => {
                 </TeamHeader>
                 <Row className="justify-content-center">
                     {teamData.map(({ img, name, position }, i) => (
-                        <Col key={i} lg={position ? 6 : 4} xs={1}>
+                        <Col key={i} lg={position ? 6 : 4} md={6} xs={12}>
                             <Profile>
                                 <img src={img} alt={name} width="100%" />
                                 <div className="profile-content">
@@ -33,6 +33,7 @@ const Team = () => {
                 css={`
                     position: absolute;
                     bottom: 0;
+                    width: 20%;
                 `}
             />
         </TeamSection>
@@ -57,8 +58,8 @@ const Profile = styled.div`
     text-align: center;
     border-radius: 100%;
     overflow: hidden;
-    width: 20rem;
-    height: 20rem;
+    width: clamp(17rem, 40vw, 20rem);
+    height: clamp(17rem, 40vw, 20rem);
     margin: 3rem auto;
     z-index: 1;
 

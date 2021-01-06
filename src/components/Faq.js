@@ -182,14 +182,17 @@ const FaqWrapper = styled.section`
         position: relative;
         bottom: -80px;
         width: 100%;
-        user-select: none;
+
+        @media (max-width: 768px) {
+            bottom: -40px;
+        }
     }
 
     .train-b-img {
         position: absolute;
         bottom: -35px;
         left: 0;
-        user-select: none;
+        width: 65%;
     }
 `;
 

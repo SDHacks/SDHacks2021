@@ -80,7 +80,7 @@ const HeroWrapper = styled.section`
 
         h1 {
             font-weight: 800;
-            font-size: clamp(3rem, 30vw, 4rem);
+            font-size: clamp(2rem, 15vw, 5rem);
         }
     }
 
@@ -100,31 +100,11 @@ const HeroWrapper = styled.section`
         position: absolute;
         bottom: -5%;
         left: 10%;
-        width: 18%;
         z-index: 1;
         animation: float 5s ease 2s infinite;
 
-        @media (max-width: 1375px) {
-            width: 20%;
-        }
-
-        @media (max-width: 1350px) {
-            width: 25%;
-        }
-
-        @media (max-width: 1100px) {
-            width: 27%;
-            left: 16%;
-            bottom: -2%;
-        }
-
-        @media (max-width: 960px) {
-            left: 13%;
-            bottom: 3%;
-        }
-
-        @media (max-width: 760px) {
-            left: 8%;
+        img {
+            width: 25vw;
         }
 
         @media (max-width: 576px) {
@@ -135,31 +115,11 @@ const HeroWrapper = styled.section`
     .building-TR {
         position: absolute;
         top: 6%;
-        right: 10%;
-        width: 18%;
+        right: 7%;
         animation: float 5s infinite;
 
-        @media (max-width: 1375px) {
-            width: 20%;
-        }
-
-        @media (max-width: 1350px) {
-            width: 23%;
-        }
-
-        @media (max-width: 1100px) {
-            width: 25%;
-            right: 18%;
-            top: 9%;
-        }
-
-        @media (max-width: 960px) {
-            right: 15%;
-            top: 14%;
-        }
-
-        @media (max-width: 760px) {
-            right: 10%;
+        img {
+            width: 20vw;
         }
 
         @media (max-width: 576px) {

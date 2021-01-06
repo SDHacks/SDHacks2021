@@ -1,7 +1,6 @@
 import React, { useState } from 'react';
 import { Container, Row, Col, Modal } from 'react-bootstrap';
 import styled from 'styled-components';
-import Zoom from 'react-reveal/Zoom';
 
 import { ReactComponent as Learning } from '../assets/icons/learning.svg';
 import { ReactComponent as Sustainability } from '../assets/icons/sustainability.svg';
@@ -50,14 +49,14 @@ const Tracks = () => {
         <TracksSection className="tracks">
             <Container>
                 <Row>
-                    <Col xl={5} lg={6}>
+                    <Col lg={5} md={12}>
                         <Title>
                             <span>this year's</span>
                             <br />
                             TRACKS
                         </Title>
                     </Col>
-                    <Col>
+                    <Col className="track-container">
                         {tracks.map(({ name, icon }, i) => (
                             <TracksCard onClick={() => handleShow(i)} key={i}>
                                 <Row>
@@ -74,9 +73,7 @@ const Tracks = () => {
                     </Col>
                 </Row>
             </Container>
-            <Zoom>
-                <img src={Building} className="building-img" alt="" />
-            </Zoom>
+            <img src={Building} className="building-img" alt="" />
 
             <Modal size="lg" show={showTrack} onHide={handleClose}>
                 <Modal.Header closeButton>
@@ -93,18 +90,29 @@ const TracksSection = styled.section`
     position: relative;
     padding: 10rem 0;
 
+    .track-container {
+        z-index: 1;
+    }
+
     .building-img {
         position: absolute;
         bottom: 0;
         left: 7em;
-        z-index: 1;
+
+        @media (max-width: 992px) {
+            opacity: 0.5;
+        }
+
+        @media (max-width: 576px) {
+            display: none;
+        }
     }
 `;
 
 const Title = styled.h1`
     color: var(--green);
     font-weight: 900;
-    font-size: 5rem;
+    font-size: clamp(2rem, 15vw, 5rem);
 
     span {
         color: var(--white);
@@ -134,7 +142,7 @@ const TracksCard = styled.div`
     }
 
     .track-name {
-        font-size: 2em;
+        font-size: clamp(1rem, 10vw, 3rem);
         text-shadow: 0px 6px #201f26;
 
         margin-left: 1em;

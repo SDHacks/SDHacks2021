@@ -118,7 +118,7 @@ const SectionContent = styled.div`
 const SectionHeader = styled.h1`
     color: white;
     font-weight: 900;
-    font-size: 3rem;
+    font-size: clamp(2rem, 15vw, 5rem);
     margin-bottom: 3rem;
 `;
 
