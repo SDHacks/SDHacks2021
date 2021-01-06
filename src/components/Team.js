@@ -15,12 +15,17 @@ const Team = () => {
                 </TeamHeader>
                 <Row className="justify-content-center">
                     {teamData.map(({ img, name, position }, i) => (
-                        <Col key={i} lg={position ? 6 : 4} md={6} xs={12}>
+                        <Col
+                            key={i}
+                            lg={position === 'SD Hacks Co-Director' ? 6 : 4}
+                            md={6}
+                            xs={12}
+                        >
                             <Profile>
                                 <img src={img} alt={name} width="100%" />
                                 <div className="profile-content">
                                     <h1>{name}</h1>
-                                    {position && <h2>{position}</h2>}
+                                    {<h2>{position}</h2>}
                                 </div>
                             </Profile>
                         </Col>

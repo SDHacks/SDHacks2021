@@ -9,7 +9,7 @@ import Sarayu from '../assets/team/Sarayu.jpg';
 const teamData = [
     {
         img: Sid,
-        name: 'Siddarth Nag',
+        name: 'Siddharth Nag',
         position: 'SD Hacks Co-Director',
     },
     {
@@ -20,22 +20,27 @@ const teamData = [
     {
         img: Johnny,
         name: 'Johnny Nguyen',
+        position: 'Logistics Director',
     },
     {
         img: Oscar,
-        name: 'Oscar Acevado',
+        name: 'Oscar Acevedo',
+        position: 'Finance Director',
     },
     {
         img: Shin,
         name: 'Shin Ehara',
+        position: 'Fellowship Director',
     },
     {
         img: Suditi,
         name: 'Suditi Bhatt',
+        position: 'Marketing Director',
     },
     {
         img: Sarayu,
         name: 'Sarayu Pai',
+        position: 'Operations Director',
     },
 ];
 
