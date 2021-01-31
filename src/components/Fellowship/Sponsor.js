@@ -63,8 +63,6 @@ const Sponsors = () => {
             <Container>
                 <SectionContent>
                     <SectionHeader>
-                        last year's
-                        <br />
                         <span
                             css={`
                                 color: var(--cyan);
@@ -147,7 +145,8 @@ const tierTwoSponsor = [
     {
         name: 'echoAR',
         logo: echoar,
-        link: 'https://www.echoar.xyz/?gclid=Cj0KCQiAmL-ABhDFARIsAKywVaeWJMRPefyrDjU0z2apexRWkVvPVJU9rFZjWPjlyBBjMYzLLVTqke4aAhAAEALw_wcB',
+        link:
+            'https://www.echoar.xyz/?gclid=Cj0KCQiAmL-ABhDFARIsAKywVaeWJMRPefyrDjU0z2apexRWkVvPVJU9rFZjWPjlyBBjMYzLLVTqke4aAhAAEALw_wcB',
         width: '60',
     },
     {
