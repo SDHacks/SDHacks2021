@@ -1,5 +1,5 @@
 import React from 'react';
-import { Container, Col, Row } from 'react-bootstrap';
+import { Container } from 'react-bootstrap';
 import styled from 'styled-components';
 import 'styled-components/macro';
 const About = () => {
@@ -14,21 +14,35 @@ const About = () => {
                 >
                     About
                 </h1>
-                <div 
+                <div
                     style={{
                         fontWeight: '150',
                         fontSize: '30px',
-                        paddingLeft: '10%',
-                        paddingRight: '10%',}}
-                        >
-                    <p>SD Hacks is where the best student hackers gather and work on innovative projects. Then, why are we letting these projects stay stale on GitHub repositories after the event? </p> <p></p>
-                    <p>This simple question drove us to create SD Hacks Fellowship. SD Hacks Fellowship is a 10-week accelerator program for those interested in continuing their SD Hacks projects as something bigger - either startups, non-profit organizations, or impactful side-projects. SD Hacks Fellowship is an infrastructure where the best "hacks" at SD Hacks will grow way beyond just hackathon projects. Join our community of growth-minded talented engineers and get support to build your big things.</p>
-             </div>
-             </Container>
+                    }}
+                >
+                    <p>
+                        SD Hacks is where the best student hackers gather and
+                        work on innovative projects. Then, why are we letting
+                        these projects stay stale on GitHub repositories after
+                        the event?{' '}
+                    </p>{' '}
+                    <p></p>
+                    <p>
+                        This simple question drove us to create SD Hacks
+                        Fellowship. SD Hacks Fellowship is a 10-week accelerator
+                        program for those interested in continuing their SD
+                        Hacks projects as something bigger - either startups,
+                        non-profit organizations, or impactful side-projects. SD
+                        Hacks Fellowship is an infrastructure where the best
+                        "hacks" at SD Hacks will grow way beyond just hackathon
+                        projects. Join our community of growth-minded talented
+                        engineers and get support to build your big things.
+                    </p>
+                </div>
+            </Container>
         </AboutContainer>
     );
 };
-
 
 const AboutContainer = styled.div`
     background-color: var(--orange-light);
