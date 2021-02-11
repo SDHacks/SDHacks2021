@@ -83,6 +83,19 @@ const Header = ({ navItems }) => {
                     width="100%"
                 />
             </a>
+
+            <a
+                id="pinnacle-trust-badge"
+                href="https://pinnacle.us.org/"
+                target="_blank"
+                rel="noreferrer noopener"
+            >
+                <img
+                    src="https://s3.amazonaws.com/logged-assets/trust-badge/2021/mlh-trust-badge-2021-black.svg"
+                    alt="Major League Hacking 2021 Hackathon Season"
+                    width="100%"
+                />
+            </a>
         </Navbar>
     );
 };
