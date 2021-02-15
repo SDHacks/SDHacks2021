@@ -48,6 +48,11 @@ const FaqData = [
             "SD Hacks Fellowship serves those interested in continuing their SD Hacks projects as something bigger - either startups, non-profits, or impactful side-projects. (But you don't have to strictly stick with your idea from SD Hacks.)",
     },
     {
+        question: "Is the program virtual or in-person?",
+        answer:
+            "Our 2021 program will be remote. All the primary events including workshops, speaker events, mentorship sessions, and Demo Day will be held virtually. If the on-campus co-working space becomes available in the spring quarter, Fellows’ use of it will be optional.",
+    },
+    {
         question: "What's the application process like?",
         answer:
             'One written application and one 30 mins interview. Application opens on February 15th, 2021, and closes on February 26th, 2021.',
