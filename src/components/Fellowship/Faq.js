@@ -67,7 +67,7 @@ const FaqData = [
         answer:
             "Make sure you really know the problem you're going to tackle as well as the technical skillsets that you'll need. We like applicants who truly care about the problem of their focus and who are confident in their technical abilities.",    },
     {
-        question: 'Do I need previous statup experience?',
+        question: 'Do I need previous startup experience?',
         answer: 'No.',
     },
     {
