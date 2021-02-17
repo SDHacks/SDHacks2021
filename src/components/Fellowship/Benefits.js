@@ -36,7 +36,7 @@ const provideInfo = [
     {
         title: 'Entrepreneurship Curriculum',
         info:
-            'We host weekly workshops and speaker events to help founders learn to scale. Workshop topics include product, users, marketing, pitching, and more.Confirmed guests include Elad Gil (investor), Cory Levy (First Text), Kojin Oshiba (Robust Intelligence), Soham More (Sympto Health), Scott Klemmer (UCSD Design Lab), Andy White (Keshif Ventures), and more.',
+            'We host weekly workshops and speaker events to help founders learn to scale. Workshop topics include product, users, marketing, pitching, and more. Confirmed guests include Elad Gil (investor), Cory Levy (First Text), Kojin Oshiba (Robust Intelligence), Soham More (Sympto Health), Scott Klemmer (UCSD Design Lab), Andy White (Keshif Ventures), and more.',
     },
     {
         title: 'Mentorship',
@@ -51,7 +51,7 @@ const provideInfo = [
     {
         title: 'Resources',
         info:
-            'AWS, Google Cloud, Stripe, and Notion credits. Co-working space and hardware facility at The Basement on UCSD campus. (Subject to change for 2021.)',
+            'AWS, Google Cloud, Stripe, and Notion credits. (No on-campus co-working space will be provided for the 20/21 academic year.)',
     },
     {
         title: 'Demo Day',
