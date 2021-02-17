@@ -51,7 +51,7 @@ const provideInfo = [
     {
         title: 'Resources',
         info:
-            'AWS, Google Cloud, Stripe, and Notion credits. “(No on-campus co-working space will be provided for the 20/21 academic year.)',
+            'AWS, Google Cloud, Stripe, and Notion credits. (No on-campus co-working space will be provided for the 20/21 academic year.)',
     },
     {
         title: 'Demo Day',
