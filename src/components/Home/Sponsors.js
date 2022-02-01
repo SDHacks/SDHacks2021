@@ -71,15 +71,21 @@ const Sponsors = () => {
                         >
                             SPONSORS
                         </span>
+                        <div className="row align-items-center justify-content-center">
+                            Coming Soon!
+                        </div>
                     </SectionHeader>
+                    {/* COMMENTED OUT SPONSORS
                     <SponsorContent>
                         <div className="row align-items-center justify-content-center">
-                            {renderSponsors(tierOneSponsor)}
+                            {renderSponsors(tierOneSponsor)} 
+                            
                         </div>
                         <div className="row align-items-center justify-content-center">
-                            {renderSponsors(tierTwoSponsor)}
+                            {renderSponsors(tierTwoSponsor)} 
                         </div>
                     </SponsorContent>
+                    */}
 
                     <SectionHeader
                         css={`
@@ -201,6 +207,7 @@ const tierTwoSponsor = [
 ].map((x) => ({ ...x, tier: 1 }));
 
 const tierOnePartner = [
+{/* COMMENTING OUT UNCONFIRMED PARTNERS
     {
         name: 'ACM',
         logo: acm,
@@ -243,12 +250,14 @@ const tierOnePartner = [
         link: 'http://swe.ucsd.edu/',
         width: '100',
     },
+*/},
     {
         name: 'Tau Beta Pi',
         logo: tbp,
         link: 'https://tbp.ucsd.edu/home',
         width: '70',
     },
+{/* COMMENTING OUT UNCONFIRMED PARTNERS
     {
         name: 'Triton LinkedIn Group',
         logo: tlg,
@@ -261,6 +270,7 @@ const tierOnePartner = [
         link: 'https://wic.ucsd.edu/',
         width: '80',
     },
+*/}
 ].map((x) => ({ ...x, tier: 3 }));
 
 export default Sponsors;

@@ -65,9 +65,11 @@ const Header = ({ navItems }) => {
                                 {name}
                             </Nav.Link>
                         ))}
+                        {/* COMMENTING OUT FELLOWSHIP FROM NAVBAR
                         <Nav.Link href={`fellowship`}>
                             {`fellowship`}
                         </Nav.Link>
+                        */}
                     </Nav>
                 </Navbar.Collapse>
             </Container>

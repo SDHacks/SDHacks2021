@@ -20,7 +20,7 @@ const Tracks = () => {
 
     const tracks = [
         {
-            name: 'remote education',
+            name: 'health and well being',
             icon: <Learning />,
             description:
                 'In this unprecedented time, families across the United States face challenges associated with the transition to remote learning, whether it be those facing connection inequity, individuals with special needs, or people experiencing homelessness.',
@@ -32,7 +32,7 @@ const Tracks = () => {
                 'Our climate is changing and it takes a systematic effort to combat it. This track encourages hackers to develop solutions tackling the challenges of climate change or educating the public about the environmental challenges we face.',
         },
         {
-            name: 'urban innovation',
+            name: 'community',
             icon: <Urban />,
             description:
                 'In a growing society, we require new solutions tackling societal, environmental, and economic issues. This track spans everything from small neighborhood improvements to ambitious endeavors in large cities. Potential solutions include reducing carbon emissions, tackling transportation inequity, infrastructure improvements, or affordable housing.',
