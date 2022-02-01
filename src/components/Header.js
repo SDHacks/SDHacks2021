@@ -5,7 +5,7 @@ import 'styled-components/macro';
 import $ from 'jquery';
 
 import Logo from '../assets/logo-header.png';
-import pinnacle from '../assets/partners/pinnacle.png';
+// import pinnacle from '../assets/partners/pinnacle.png';
 
 const Header = ({ navItems }) => {
     const navLinks = useMemo(() => navItems, [navItems]);
@@ -69,7 +69,7 @@ const Header = ({ navItems }) => {
                 </Navbar.Collapse>
             </Container>
 
-            <a
+            {/* <a
                 id="mlh-trust-badge"
                 href="https://mlh.io/seasons/2021/events?utm_source=na-hackathon&utm_medium=TrustBadge&utm_campaign=2021-season&utm_content=black"
                 target="_blank"
@@ -93,7 +93,7 @@ const Header = ({ navItems }) => {
                     alt="Pinnacle 2021"
                     width="100%"
                 />
-            </a>
+            </a> */}
         </Navbar>
     );
 };
