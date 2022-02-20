@@ -17,11 +17,13 @@ const Hero = () => {
                 <Fade>
                     <img src={Logo} alt="logo" className="hero-logo" />
                     <div className="cta">
+                        {/* COMMENTED OUT VIRTUAL FOR TITLE
                         <h1 className="mb-4">
                             Completely
                             <br />
                             Virtual
                         </h1>
+                        */}
                         <Button
                             size="lg"
                             href="https://forms.gle/Pa1211WbZdRMo9gS8"
