@@ -37,8 +37,7 @@ const About = () => {
                                 companies, SD Hacks 2022 is shaping up to become
                                 an unforgettable 36 hours of collaboration,
                                 empowerment, and innovation. This year, SD Hacks
-                                will be going completely virtual and bringing
-                                the hackathon to you from April 8 -10th.
+                                will be from April 8 -10th.
                             </Description>
                         </Fade>
                     </Col>
