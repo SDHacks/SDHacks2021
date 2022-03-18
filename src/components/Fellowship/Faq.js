@@ -3,6 +3,8 @@ import { Container, Col, Row } from 'react-bootstrap';
 import styled from 'styled-components';
 import 'styled-components/macro';
 
+{/*USED FOR FELLOWSHIP CURRENTLY COMMENTED OUT*/}
+
 const Faq = () => {
     return (
         <FaqContainer className="faq">
