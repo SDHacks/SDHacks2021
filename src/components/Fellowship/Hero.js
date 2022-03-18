@@ -11,10 +11,13 @@ const Hero = () => {
                 <Row xs={1} lg={2}>
                     <Col className="heading-col">
                         <h1>
-                            SD Hacks
+                            SPONSORSHIP
                             <br />
-                            Fellowship
+                            DECK
                         </h1>
+                        <h2>
+                            April 8-10, 2022
+                        </h2>
                         <Button
                             size="lg"
                             href="https://docs.google.com/forms/d/e/1FAIpQLScyXFysR1TbLTtvJuN583BfGo97LCWUX6vyXyUBlE6meTeVQQ/viewform?usp=sf_link"
@@ -29,6 +32,11 @@ const Hero = () => {
                         <img src={HeroImg} alt="" width="80%" />
                     </Col>
                 </Row>
+                <br></br>
+                <br></br>
+                <h5 style={{textAlign: 'center'}}>
+                    Virtual • 36 hours • 3000+ applicants • 700 attendees • 100+ projects
+                </h5>
             </Container>
         </HeroContainer>
     );
