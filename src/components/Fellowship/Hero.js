@@ -18,18 +18,18 @@ const Hero = () => {
                         <h2>
                             April 8-10, 2022
                         </h2>
-                        <Button
+
+                        {/* <Button
+			    onClick={() => setVisibility(true)}
                             size="lg"
-                            href="https://docs.google.com/forms/d/e/1FAIpQLScyXFysR1TbLTtvJuN583BfGo97LCWUX6vyXyUBlE6meTeVQQ/viewform?usp=sf_link"
-                            target="_blank"
-                            rel="noopener noreferrer"
                             className="mt-3"
                         >
-                            Apply Now
+                            Buy Now
                         </Button>
-                    </Col>
-                    <Col>
-                        <img src={HeroImg} alt="" width="80%" />
+			*/}
+			<h2>
+			    Payment form coming soon!
+			</h2>
                     </Col>
                 </Row>
                 <br></br>
@@ -41,6 +41,7 @@ const Hero = () => {
         </HeroContainer>
     );
 };
+
 
 const HeroContainer = styled.section`
     background: var(--orange-light);
