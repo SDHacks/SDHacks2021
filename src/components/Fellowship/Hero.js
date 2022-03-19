@@ -2,7 +2,7 @@ import React from 'react';
 import { Container, Row, Col, Button } from 'react-bootstrap';
 import styled from 'styled-components';
 
-import HeroImg from '../../assets/svg/building-hero-bl.svg';
+import HeroImg from '../../assets/svg/sd-hacks-logo.svg';
 
 const Hero = () => {
     return (
@@ -31,6 +31,9 @@ const Hero = () => {
 			    Payment form coming soon!
 			</h2>
                     </Col>
+		    <Col>
+		        <img src={HeroImg} alt="" width="80%"/>
+		    </Col>
                 </Row>
                 <br></br>
                 <br></br>
