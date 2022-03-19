@@ -57,7 +57,7 @@ const Hero = () => {
 const HeroWrapper = styled.section`
     height: 85vh;
     min-height: 800px;
-    background-color: var(--orange-light);
+    background-color: var(--yellow-light);
     position: relative;
 
     .container {
