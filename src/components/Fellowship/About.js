@@ -37,7 +37,7 @@ const About = () => {
 };
 
 const AboutContainer = styled.section`
-    background-color: var(--orange-light);
+    background-color: var(--yellow-light);
     color: var(--dark);
     padding: 5% 0;
 
