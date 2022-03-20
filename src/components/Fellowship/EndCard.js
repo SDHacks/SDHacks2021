@@ -9,9 +9,6 @@ const endTable = () => {
     return (
         <EndContainer className='end'>
             <Container>
-                <Row md={1} sm={1}>
-                    <img src={HeroImg} alt="" width="80%" />
-                </Row>
                 <br></br>
                 <br></br>
                 <Row md={1} sm={1}>
