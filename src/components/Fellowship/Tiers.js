@@ -19,8 +19,12 @@ const tiersTable = () => {
                         SPONSOR TIERS
                     </h1>
                 </Row>
-                <Row md={1} sm={1}>
-                    <img src={tierImg} alt="" width="80%" />
+                <Row md="auto" sm={1}>
+                    <img src={tierImg} alt="" style={{
+                        maxWidth: '60vw',
+                        marginLeft: 'auto',
+                        marginRight: 'auto'
+                    }} />
                 </Row>
             </Container>
         </TierContainer>
