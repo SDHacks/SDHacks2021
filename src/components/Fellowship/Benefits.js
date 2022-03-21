@@ -3,7 +3,7 @@ import { Container, Col, Row } from 'react-bootstrap';
 import styled from 'styled-components';
 import 'styled-components/macro';
 
-import StatsImg from '../../assets/svg/stats-sdhacks2022.svg';
+import StatsImg from '../../assets/svg/CircleGraphs.svg';
 
 const provide = () => {
     return (
