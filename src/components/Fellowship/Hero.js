@@ -2,7 +2,7 @@ import React from 'react';
 import { Container, Row, Col, Button } from 'react-bootstrap';
 import styled from 'styled-components';
 
-import HeroImg from '../../assets/svg/building-hero-bl.svg';
+// import HeroImg from '../../assets/svg/building-hero-bl.svg';
 
 const Hero = () => {
     return (
@@ -26,7 +26,7 @@ const Hero = () => {
                         </Button>
                     </Col>
                     <Col>
-                        <img src={HeroImg} alt="" width="80%" />
+                        {/* <img src={HeroImg} alt="" width="80%" /> */}
                     </Col>
                 </Row>
             </Container>

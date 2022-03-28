@@ -4,8 +4,8 @@ import 'styled-components/macro';
 import { Container } from 'react-bootstrap';
 import { FaFacebook, FaInstagram, FaTwitter, FaLinkedin, FaYoutube } from 'react-icons/fa';
 
-import BuildingBottom from '../assets/svg/building-footer-b.svg';
-import BuildingRight from '../assets/svg/building-footer-r.svg';
+// import BuildingBottom from '../assets/svg/building-footer-b.svg';
+// import BuildingRight from '../assets/svg/building-footer-r.svg';
 
 const Footer = () => {
     return (
@@ -84,7 +84,7 @@ const Footer = () => {
                     </a>
                 </div>
 
-                <img src={BuildingBottom} alt="" width="25%" />
+                {/* <img src={BuildingBottom} alt="" width="25%" />
                 <img
                     src={BuildingRight}
                     alt=""
@@ -94,7 +94,7 @@ const Footer = () => {
                         top: -150px;
                         width: 20%;
                     `}
-                />
+                /> */}
             </Container>
         </StyledFooter>
     );

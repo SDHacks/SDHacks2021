@@ -3,10 +3,10 @@ import { Container, Button } from 'react-bootstrap';
 import styled from 'styled-components';
 import { Fade, Slide } from 'react-reveal';
 
-import BuildingBR from '../../assets/svg/building-hero-br.svg';
-import BuildingBL from '../../assets/svg/building-hero-bl.svg';
-import BuildingTL from '../../assets/svg/building-hero-tl.svg';
-import BuildingTR from '../../assets/svg/building-hero-tr.svg';
+// import BuildingBR from '../../assets/svg/building-hero-br.svg';
+// import BuildingBL from '../../assets/svg/building-hero-bl.svg';
+// import BuildingTL from '../../assets/svg/building-hero-tl.svg';
+// import BuildingTR from '../../assets/svg/building-hero-tr.svg';
 import Logo from '../../assets/svg/hero-logo.svg';
 import { Parallax } from 'react-scroll-parallax';
 
@@ -37,7 +37,7 @@ const Hero = () => {
                 </Fade>
             </Container>
 
-            <Parallax className="building-TR" y={[100, 0]}>
+            {/* <Parallax className="building-TR" y={[100, 0]}>
                 <img src={BuildingTR} alt="" />
             </Parallax>
             <Slide right>
@@ -49,7 +49,7 @@ const Hero = () => {
             </Parallax>
             <Slide left>
                 <img src={BuildingTL} className="building-TL" alt="" />
-            </Slide>
+            </Slide> */}
         </HeroWrapper>
     );
 };
