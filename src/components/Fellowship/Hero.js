@@ -26,10 +26,10 @@ const Hero = () => {
                         >
                             Buy Now
                         </Button>
-			*/}
-			<h2>
-			    Payment form coming soon!
-			</h2>
+                        */}
+                        <h2>
+                            Payment form coming soon!
+                        </h2>
                     </Col>
 		    <Col>
 		        <img src={HeroImg} alt="" width="80%"/>
