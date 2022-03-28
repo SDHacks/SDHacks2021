@@ -26,7 +26,7 @@ class Routes extends React.Component {
                     exact
                 />
                 <Route
-                    path="/fellowship"
+                    path="/for-sponsors"
                     component={this.withLayout(
                         FellowshipLayout,
                         FellowshipPage
