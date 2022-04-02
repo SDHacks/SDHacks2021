@@ -4,8 +4,8 @@ import 'styled-components/macro';
 import { Container } from 'react-bootstrap';
 import { FaFacebook, FaInstagram, FaTwitter, FaLinkedin, FaYoutube } from 'react-icons/fa';
 
-import BuildingBottom from '../assets/svg/building-footer-b.svg';
-import BuildingRight from '../assets/svg/building-footer-r.svg';
+// import BuildingBottom from '../assets/svg/building-footer-b.svg';
+// import BuildingRight from '../assets/svg/building-footer-r.svg';
 
 const Footer = () => {
     return (
@@ -83,6 +83,7 @@ const Footer = () => {
                         <FaYoutube />
                     </a>
                 </div>
+
             </Container>
         </StyledFooter>
     );
