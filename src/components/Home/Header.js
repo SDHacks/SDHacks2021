@@ -65,7 +65,7 @@ const Header = ({ navItems }) => {
                             </Nav.Link>
                         ))}
                         <Nav.Link href={`for-sponsors`}>
-                            {`For Sponsors`}
+                            {`Be a Sponsor`}
                         </Nav.Link>
                     </Nav>
                 </Navbar.Collapse>
