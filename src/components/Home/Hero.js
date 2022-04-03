@@ -36,20 +36,6 @@ const Hero = () => {
                     </div>
                 </Fade>
             </Container>
-
-            {/* <Parallax className="building-TR" y={[100, 0]}>
-                <img src={BuildingTR} alt="" />
-            </Parallax>
-            <Slide right>
-                <img src={BuildingBR} alt="" className="building-BR" />
-            </Slide>
-
-            <Parallax className="building-BL" y={[0, 50]}>
-                <img src={BuildingBL} alt="" />
-            </Parallax>
-            <Slide left>
-                <img src={BuildingTL} className="building-TL" alt="" />
-            </Slide> */}
         </HeroWrapper>
     );
 };
@@ -69,10 +55,10 @@ const HeroWrapper = styled.section`
     }
 
     .hero-logo {
-        width: 40%;
+        width: 45%;
 
         @media (max-width: 576px) {
-            width: 70%;
+            width: 80%;
         }
     }
 

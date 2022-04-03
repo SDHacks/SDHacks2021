@@ -4,8 +4,8 @@ import styled from 'styled-components';
 import { Fade, Slide } from 'react-reveal';
 import withReveal from 'react-reveal/withReveal';
 
-import Train from '../../assets/svg/train-1.svg';
-import { ReactComponent as Trees } from '../../assets/svg/trees.svg';
+// import Train from '../../assets/svg/train-1.svg';
+// import { ReactComponent as Trees } from '../../assets/svg/trees.svg';
 
 const About = () => {
     return (
@@ -44,9 +44,9 @@ const About = () => {
                 </Row>
             </StyledContainer>
             <Slide left>
-                <img src={Train} className="train" alt="bullet train" />
+                {/* <img src={Train} className="train" alt="bullet train" /> */}
             </Slide>
-            <Trees className="trees" />
+            {/* <Trees className="trees" /> */}
         </AboutSection>
     );
 };
@@ -56,39 +56,39 @@ const AboutSection = styled.section`
     position: relative;
     padding-top: 5rem;
 
-    .train {
-        position: absolute;
-        bottom: 0%;
-        left: 0%;
-        width: 100%;
+    // .train {
+    //     position: absolute;
+    //     bottom: 0%;
+    //     left: 0%;
+    //     width: 100%;
 
-        @media (max-width: 576px) {
-            display: none;
-        }
-    }
+    //     @media (max-width: 576px) {
+    //         display: none;
+    //     }
+    // }
 
-    .trees {
-        position: absolute;
-        bottom: -5%;
-        right: 0%;
-        width: 40%;
+    // .trees {
+    //     position: absolute;
+    //     bottom: -5%;
+    //     right: 0%;
+    //     width: 40%;
 
-        @media (max-width: 1375px) {
-            bottom: -7%;
-        }
+    //     @media (max-width: 1375px) {
+    //         bottom: -7%;
+    //     }
 
-        @media (max-width: 920px) {
-            bottom: -8%;
-        }
+    //     @media (max-width: 920px) {
+    //         bottom: -8%;
+    //     }
 
-        @media (max-width: 800px) {
-            bottom: -9%;
-        }
+    //     @media (max-width: 800px) {
+    //         bottom: -9%;
+    //     }
 
-        @media (max-width: 576px) {
-            display: none;
-        }
-    }
+    //     @media (max-width: 576px) {
+    //         display: none;
+    //     }
+    // }
 `;
 
 const StyledContainer = styled(Container)`

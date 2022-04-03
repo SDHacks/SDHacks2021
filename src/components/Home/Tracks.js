@@ -7,7 +7,7 @@ import { ReactComponent as Sustainability } from '../../assets/icons/sustainabil
 import { ReactComponent as Urban } from '../../assets/icons/urban.svg';
 import { ReactComponent as Civic } from '../../assets/icons/civic.svg';
 
-import Building from '../../assets/svg/building-jacobs.svg';
+// import Building from '../../assets/svg/building-jacobs.svg';
 
 const Tracks = () => {
     const [showTrack, setShowTrack] = useState(false);
@@ -73,7 +73,7 @@ const Tracks = () => {
                     </Col>
                 </Row>
             </Container>
-            <img src={Building} className="building-img" alt="" />
+            {/* <img src={Building} className="building-img" alt="" /> */}
 
             <Modal size="lg" show={showTrack} onHide={handleClose}>
                 <Modal.Header closeButton>
@@ -94,19 +94,19 @@ const TracksSection = styled.section`
         z-index: 1;
     }
 
-    .building-img {
-        position: absolute;
-        bottom: 0;
-        left: 7em;
+    // .building-img {
+    //     position: absolute;
+    //     bottom: 0;
+    //     left: 7em;
 
-        @media (max-width: 992px) {
-            opacity: 0.5;
-        }
+    //     @media (max-width: 992px) {
+    //         opacity: 0.5;
+    //     }
 
-        @media (max-width: 576px) {
-            display: none;
-        }
-    }
+    //     @media (max-width: 576px) {
+    //         display: none;
+    //     }
+    // }
 `;
 
 const Title = styled.h1`
