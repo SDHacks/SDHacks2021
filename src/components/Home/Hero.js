@@ -29,10 +29,30 @@ const Hero = () => {
                             href="https://forms.gle/Pa1211WbZdRMo9gS8"
                             target="_blank"
                             rel="noopener noreferrer"
-                            className="mt-3"
+                            className="mt-4 ml-3 mr-3"
                         >
-                            Apply Now
+                            Apply as a Participant
                         </Button>
+			<Button
+                            size="lg"
+                            href="https://forms.gle/rgLxLporyqKgqkma9"
+                            target="_blank"
+                            rel="noopener noreferrer"
+                            className="mt-4 ml-3 mr-3"
+                        >
+                            Apply as a Mentor
+                        </Button>
+			<Button
+                            size="lg"
+                            href="https://forms.gle/zKWdGFWTvmdHQshr7"
+                            target="_blank"
+                            rel="noopener noreferrer"
+                            className="mt-4 ml-3 mr-3"
+                        >
+                            Apply as a Judge
+                        </Button>
+
+
                     </div>
                 </Fade>
             </Container>
@@ -43,7 +63,7 @@ const Hero = () => {
 const HeroWrapper = styled.section`
     height: 85vh;
     min-height: 800px;
-    background-color: var(--orange-light);
+    background-color: var(--yellow-light);
     position: relative;
 
     .container {

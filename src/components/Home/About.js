@@ -52,7 +52,7 @@ const About = () => {
 };
 
 const AboutSection = styled.section`
-    background-color: var(--orange-light);
+    background-color: var(--yellow-light);
     position: relative;
     padding-top: 5rem;
 

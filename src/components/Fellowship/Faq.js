@@ -3,6 +3,8 @@ import { Container, Col, Row } from 'react-bootstrap';
 import styled from 'styled-components';
 import 'styled-components/macro';
 
+{/*USED FOR FELLOWSHIP CURRENTLY COMMENTED OUT*/}
+
 const Faq = () => {
     return (
         <FaqContainer className="faq">
@@ -86,7 +88,7 @@ const FaqData = [
 ];
 
 const FaqContainer = styled.section`
-    background-color: var(--orange-light);
+    background-color: var(--yellow-light);
     color: var(--dark);
     padding: 5% 0;
 

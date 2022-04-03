@@ -2,7 +2,7 @@ import React from 'react';
 import { Container, Row, Col, Button } from 'react-bootstrap';
 import styled from 'styled-components';
 
-// import HeroImg from '../../assets/svg/building-hero-bl.svg';
+import HeroImg from '../../assets/svg/sd-hacks-logo.svg';
 
 const Hero = () => {
     return (
@@ -11,31 +11,43 @@ const Hero = () => {
                 <Row xs={1} lg={2}>
                     <Col className="heading-col">
                         <h1>
-                            SD Hacks
+                            SPONSORSHIP
                             <br />
-                            Fellowship
+                            DECK
                         </h1>
-                        <Button
+                        <h2>
+                            April 8-10, 2022
+                        </h2>
+
+                        {/* <Button
+			    onClick={() => setVisibility(true)}
                             size="lg"
-                            href="https://docs.google.com/forms/d/e/1FAIpQLScyXFysR1TbLTtvJuN583BfGo97LCWUX6vyXyUBlE6meTeVQQ/viewform?usp=sf_link"
-                            target="_blank"
-                            rel="noopener noreferrer"
                             className="mt-3"
                         >
-                            Apply Now
+                            Buy Now
                         </Button>
+                        */}
+                        <h2>
+                            Payment form coming soon!
+                        </h2>
                     </Col>
-                    <Col>
-                        {/* <img src={HeroImg} alt="" width="80%" /> */}
-                    </Col>
+		    <Col>
+		        <img src={HeroImg} alt="" width="80%"/>
+		    </Col>
                 </Row>
+                <br></br>
+                <br></br>
+                <h5 style={{textAlign: 'center'}}>
+                    Virtual • 36 hours • 3000+ applicants • 700 attendees • 100+ projects
+                </h5>
             </Container>
         </HeroContainer>
     );
 };
 
+
 const HeroContainer = styled.section`
-    background: var(--orange-light);
+    background: var(--yellow-light);
     padding-top: 5rem;
     padding-bottom: 5rem;
 

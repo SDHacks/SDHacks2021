@@ -28,7 +28,7 @@ const Header = ({ navItems }) => {
 
     return (
         <Navbar
-            bg="orange-light"
+            bg="yellow-light"
             expand="lg"
             css={`
                 font-weight: 900;
@@ -64,11 +64,9 @@ const Header = ({ navItems }) => {
                                 {name}
                             </Nav.Link>
                         ))}
-                        {/* COMMENTING OUT FELLOWSHIP FROM NAVBAR
-                        <Nav.Link href={`fellowship`}>
-                            {`fellowship`}
+                        <Nav.Link href={`for-sponsors`}>
+                            {`Be a Sponsor`}
                         </Nav.Link>
-                        */}
                     </Nav>
                 </Navbar.Collapse>
             </Container>

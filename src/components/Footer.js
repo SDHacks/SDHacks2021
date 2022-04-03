@@ -84,17 +84,6 @@ const Footer = () => {
                     </a>
                 </div>
 
-                {/* <img src={BuildingBottom} alt="" width="25%" />
-                <img
-                    src={BuildingRight}
-                    alt=""
-                    css={`
-                        position: absolute;
-                        right: 0;
-                        top: -150px;
-                        width: 20%;
-                    `}
-                /> */}
             </Container>
         </StyledFooter>
     );
