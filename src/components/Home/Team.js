@@ -4,7 +4,7 @@ import styled from 'styled-components';
 import 'styled-components/macro';
 
 import teamData from '../../data/teamData';
-import Building from '../../assets/svg/building-footer-tl.svg';
+// import Building from '../../assets/svg/building-footer-tl.svg';
 
 const Team = () => {
     return (
@@ -32,7 +32,7 @@ const Team = () => {
                     ))}
                 </Row>
             </Container>
-            <img
+            {/* <img
                 src={Building}
                 alt=""
                 css={`
@@ -40,7 +40,7 @@ const Team = () => {
                     bottom: 0;
                     width: 20%;
                 `}
-            />
+            /> */}
         </TeamSection>
     );
 };

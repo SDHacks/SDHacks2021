@@ -4,7 +4,7 @@ import { Navbar, Nav, Container } from 'react-bootstrap';
 import 'styled-components/macro';
 import $ from 'jquery';
 
-import Logo from '../assets/logo-header.png';
+import Logo from '../assets/logo-header-2022.png';
 // import pinnacle from '../assets/partners/pinnacle.png';
 
 const Header = ({ navItems }) => {

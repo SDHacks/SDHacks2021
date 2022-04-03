@@ -5,20 +5,20 @@ import Slide from 'react-reveal/Slide';
 import { Parallax } from 'react-scroll-parallax';
 import FaqData from '../../data/SDHacksFAQ';
 
-import TrainTop from '../../assets/svg/train-2.svg';
-import Bridge from '../../assets/svg/bridge.svg';
-import Landscape from '../../assets/svg/landscape.svg';
-import TrainBottom from '../../assets/svg/train-3.svg';
+// import TrainTop from '../../assets/svg/train-2.svg';
+// import Bridge from '../../assets/svg/bridge.svg';
+// import Landscape from '../../assets/svg/landscape.svg';
+// import TrainBottom from '../../assets/svg/train-3.svg';
 
 const Faq = () => {
     return (
         <FaqWrapper>
-            <div className="train-bridge-container">
+            {/* <div className="train-bridge-container">
                 <img src={TrainTop} alt="" className="train-t-img" />
                 <Parallax y={[-10, 5]} className="bridge-img" tagOuter="figure">
                     <img src={Bridge} alt="" width="100%" />
                 </Parallax>
-            </div>
+            </div> */}
             <Container className="faq mt-5">
                 <h1 className="title">
                     frequently asked
@@ -51,10 +51,10 @@ const Faq = () => {
                 </Row>
             </Container>
 
-            <img src={Landscape} alt="" className="landscape-img" />
-            <Slide left duration={2500}>
+            {/* <img src={Landscape} alt="" className="landscape-img" /> */}
+            {/* <Slide left duration={2500}>
                 <img src={TrainBottom} alt="" className="train-b-img" />
-            </Slide>
+            </Slide> */}
         </FaqWrapper>
     );
 };
@@ -161,39 +161,39 @@ const FaqWrapper = styled.section`
         }
     }
 
-    .train-bridge-container {
-        position: relative;
-        top: -60px;
-        z-index: 1;
-    }
+    // .train-bridge-container {
+    //     position: relative;
+    //     top: -60px;
+    //     z-index: 1;
+    // }
 
-    .train-t-img {
-        position: absolute;
-        top: -5px;
-        left: -35px;
-        width: 65%;
-    }
+    // .train-t-img {
+    //     position: absolute;
+    //     top: -5px;
+    //     left: -35px;
+    //     width: 65%;
+    // }
 
-    .bridge-img {
-        position: relative;
-    }
+    // .bridge-img {
+    //     position: relative;
+    // }
 
-    .landscape-img {
-        position: relative;
-        bottom: -80px;
-        width: 100%;
+    // .landscape-img {
+    //     position: relative;
+    //     bottom: -80px;
+    //     width: 100%;
 
-        @media (max-width: 768px) {
-            bottom: -40px;
-        }
-    }
+    //     @media (max-width: 768px) {
+    //         bottom: -40px;
+    //     }
+    // }
 
-    .train-b-img {
-        position: absolute;
-        bottom: -35px;
-        left: 0;
-        width: 65%;
-    }
+    // .train-b-img {
+    //     position: absolute;
+    //     bottom: -35px;
+    //     left: 0;
+    //     width: 65%;
+    // }
 `;
 
 export default Faq;
