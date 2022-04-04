@@ -6,7 +6,6 @@ import About from '../components/Home/About';
 import Tracks from '../components/Home/Tracks';
 import Faq from '../components/Home/Faq';
 import Sponsors from '../components/Home/Sponsors';
-import Team from '../components/Home/Team';
 
 const SDHacksPage = () => {
     return (
@@ -16,7 +15,6 @@ const SDHacksPage = () => {
             <Tracks />
             <Faq />
             <Sponsors />
-            <Team />
         </>
     );
 };
