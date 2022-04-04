@@ -3,7 +3,7 @@ import { Container, Row } from 'react-bootstrap';
 import styled from 'styled-components';
 import 'styled-components/macro';
 
-import HeroImg from '../../assets/svg/building-hero-bl.svg';
+// import HeroImg from '../../assets/svg/building-hero-bl.svg';
 
 const endTable = () => {
     return (
