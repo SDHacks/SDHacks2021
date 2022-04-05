@@ -44,7 +44,7 @@ img {
     .modal-header {
         padding: 3rem;
         padding-bottom: 0;
-
+        color: var(--primary);
         .modal-title {
             font-size: 3rem;
             font-weight: 900;
@@ -54,5 +54,6 @@ img {
     .modal-body {
         padding-top: 1rem;
         font-size: 18px;
+        color: var(--primary);
     }
 }
