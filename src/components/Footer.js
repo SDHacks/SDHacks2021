@@ -38,7 +38,7 @@ const Footer = () => {
                         }
 
                         a {
-                            color: white;
+                            color: black;
                             transition: color 0.1s;
                         }
 
@@ -97,6 +97,7 @@ const StyledFooter = styled.footer`
 
     p {
         text-align: center;
+        color: var(--primary);
         font-size: clamp(1rem, 3vw, 1.5rem);
 
         a {
