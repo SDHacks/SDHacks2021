@@ -47,7 +47,7 @@ const Hero = () => {
 
 
 const HeroContainer = styled.section`
-    background: var(--yellow-light);
+    background: var(--yellow);
     padding-top: 5rem;
     padding-bottom: 5rem;
 

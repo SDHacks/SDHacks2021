@@ -67,7 +67,7 @@ const Tracks = () => {
                                         </div>
                                         <div className="track-name">{name}</div>
                                     </Col>
-                                    <Col className="svg">{icon}</Col>
+                                    {/* <Col className="svg">{icon}</Col> */}
                                 </Row>
                             </TracksCard>
                         ))}
@@ -87,44 +87,30 @@ const Tracks = () => {
 };
 
 const TracksSection = styled.section`
-    background-color: var(--primary);
+    background-color: black;
     position: relative;
     padding: 10rem 0;
 
     .track-container {
         z-index: 1;
     }
-
-    // .building-img {
-    //     position: absolute;
-    //     bottom: 0;
-    //     left: 7em;
-
-    //     @media (max-width: 992px) {
-    //         opacity: 0.5;
-    //     }
-
-    //     @media (max-width: 576px) {
-    //         display: none;
-    //     }
-    // }
 `;
 
 const Title = styled.h1`
-    color: var(--yellow-light);
-    font-weight: 900;
+    color: var(--yellow);
+    font-weight: 500;
     font-size: clamp(2rem, 15vw, 5rem);
 
     span {
-        color: var(--green);
-        font-weight: 900;
+        color: var(--yellow);
+        font-weight: 400;
         font-size: 1em;
     }
 `;
 
 const TracksCard = styled.div`
-    color: var(--purple);
-    font-weight: 900;
+    color: var(--yellow);
+    font-weight: 400;
     border: 0.5em solid;
     border-radius: 1.5em;
     padding-top: 1.5em;
@@ -133,8 +119,8 @@ const TracksCard = styled.div`
     cursor: pointer;
 
     .track-num {
-        color: var(--primary);
-        background-color: var(--purple);
+        color: var(--gray);
+        background-color: var(--yellow);
         border-radius: 0 0.4em 0.4em 0;
         padding: 0.2em 0.5em;
         padding-bottom: 0.1em;

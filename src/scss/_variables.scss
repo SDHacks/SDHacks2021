@@ -1,12 +1,10 @@
 $theme-colors: (
-    'orange': #000000,
-    'orange-light': #EEE972,
-    'yellow-light': #EEE972,
-    'cyan': #44b5c5,
+    'yellow': #EEE972,
     'green': #81cb72,
     'dark': #63438C,
     'primary': #000000,
     'gray': #393744,
+    'bright-green': #97FF73,
 );
 
 $container-max-widths: (
@@ -19,13 +17,13 @@ $container-max-widths: (
 $enable-shadows: true;
 $enable-responsive-font-sizes: true;
 
-$font-family-base: 'Trap', sans-serif;
+$font-family-base: 'Roboto Condensed', sans-serif;
 $font-size-base: $font-size-base * 1.5;
 
 $navbar-padding-y: $spacer * 2;
 $navbar-nav-link-padding-x: 1em;
 $navbar-brand-font-size: 40px;
-$navbar-light-color: theme-color('orange');
+$navbar-light-color: theme-color('primary');
 $navbar-light-hover-color: theme-color('dark');
 
 $navbar-light-brand-color: $navbar-light-color;

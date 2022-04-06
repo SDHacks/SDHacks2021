@@ -72,6 +72,7 @@ const Sponsors = () => {
                         <span
                             css={`
                                 color: var(--primary);
+                                font-weight: 500;
                             `}
                         >
                             SPONSORS
@@ -95,6 +96,7 @@ const Sponsors = () => {
                     <SectionHeader
                         css={`
                             color: var(--primary);
+                            font-weight: 500;
                         `}
                     >
                         PARTNERS
@@ -115,7 +117,7 @@ const Sponsors = () => {
 };
 
 const SponsorsSection = styled.section`
-    background-color: var(--dark);
+    background-color: var(--yellow);
     padding: 8%;
 `;
 
