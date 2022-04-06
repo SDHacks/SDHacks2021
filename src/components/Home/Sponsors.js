@@ -2,7 +2,7 @@ import React from 'react';
 import { Container } from 'react-bootstrap';
 import styled from 'styled-components';
 import 'styled-components/macro';
-
+/*
 import northrop from '../../assets/sponsors/northrop.svg';
 import kuzo from '../../assets/sponsors/KuzoClass.png';
 import fb from '../../assets/sponsors/Facebook.png';
@@ -14,6 +14,11 @@ import cse from '../../assets/sponsors/jsoe-cse.svg';
 import sdsc from '../../assets/sponsors/SDSC.jpg';
 import gc from '../../assets/sponsors/GoogleCloud.png';
 import aws from '../../assets/sponsors/aws.png';
+*/
+import leadinglearners from '../../assets/sponsors/LeadingLearners.svg';
+import cubic from '../../assets/sponsors/Cubic.svg';
+import mageai from '../../assets/sponsors/MageAI.svg';
+import chrisandfrank from '../../assets/sponsors/ChrisandFrank.svg';
 
 import acm from '../../assets/partners/acm.png';
 import wic from '../../assets/partners/wic.png';
@@ -72,11 +77,12 @@ const Sponsors = () => {
                         >
                             SPONSORS
                         </span>
+                        {/* COMMENT BACK IN WHEN TRANSITIONING TO A NEW YEAR
                         <div className="row align-items-center justify-content-center">
                             Coming Soon!
                         </div>
+                        */}
                     </SectionHeader>
-                    {/* COMMENTED OUT SPONSORS
                     <SponsorContent>
                         <div className="row align-items-center justify-content-center">
                             {renderSponsors(tierOneSponsor)} 
@@ -86,7 +92,6 @@ const Sponsors = () => {
                             {renderSponsors(tierTwoSponsor)} 
                         </div>
                     </SponsorContent>
-                    */}
 
                     <SectionHeader
                         css={`
@@ -137,20 +142,40 @@ const SponsorContent = styled(SectionContent)`
 
 const tierOneSponsor = [
     {
-        name: 'Northrop Grumman',
-        logo: northrop,
-        link: 'https://www.northropgrumman.com/Pages/default.aspx',
+        name: 'Cubic',
+        logo: cubic,
+        link: 'https://www.cubic.com',
+        width: '100',
+    },
+    {
+        name: 'MageAI',
+        logo: mageai,
+        link: 'https://www.mage.ai',
         width: '100',
     },
 ].map((x) => ({ ...x, tier: 0 }));
 
 const tierTwoSponsor = [
     {
+        name: 'Leading Learning',
+        logo: leadinglearners,
+        link: 'https://www.leadinglearning.com',
+        width: '100',
+    },
+    {
+        name: 'ChrisAndFrank',
+        logo: chrisandfrank,
+        link: 'https://www.mage.ai',
+        width: '100',
+    },
+/*
+    {
         name: 'Amazon Web Services',
         logo: aws,
         link: 'https://aws.amazon.com/',
         width: '60',
     },
+    
     {
         name: 'UCSD CSE',
         logo: cse,
@@ -206,6 +231,7 @@ const tierTwoSponsor = [
         link: 'https://www.wolfram.com/',
         width: '80',
     },
+*/
 ].map((x) => ({ ...x, tier: 1 }));
 
 const tierOnePartner = [

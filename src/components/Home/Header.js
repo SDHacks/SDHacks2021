@@ -58,17 +58,18 @@ const Header = ({ navItems }) => {
                 </Navbar.Brand>
                 <Navbar.Toggle aria-controls="navbar-nav" />
                 <Navbar.Collapse id="navbar-nav">
-                    <Nav className="ml-auto">
+                    <Nav className="ml-5 mr-0">
                         {navLinks.map((name, i) => (
                             <Nav.Link href={`#${name}`} key={i}>
                                 {name}
                             </Nav.Link>
                         ))}
-                        {/* COMMENTING OUT FELLOWSHIP FROM NAVBAR
-                        <Nav.Link href={`fellowship`}>
-                            {`fellowship`}
+                        <Nav.Link href={`for-sponsors`}>
+                            {`Be a Sponsor`}
                         </Nav.Link>
-                        */}
+			<Nav.Link href={'schedule'}>
+			    {'Schedule'}
+			</Nav.Link>
                     </Nav>
                 </Navbar.Collapse>
             </Container>

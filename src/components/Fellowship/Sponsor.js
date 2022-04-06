@@ -12,6 +12,8 @@ import basement from '../../assets/sponsors/Basement.jpg';
 import pear from '../../assets/sponsors/PearVC.png';
 import stripe from '../../assets/sponsors/stripe.png';
 
+{/*USED FOR FELLOWSHIP CURRENTLY COMMENTED OUT */}
+
 function Sponsor(props) {
     const col = props.col || 'col-md-4 col-lg-4';
 

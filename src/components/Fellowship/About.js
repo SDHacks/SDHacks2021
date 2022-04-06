@@ -12,7 +12,7 @@ const About = () => {
                         font-size: clamp(2rem, 15vw, 5rem);
                     `}
                 >
-                    About
+                    WHAT IS SD HACKS
                 </h1>
                 <div
                     css={`
@@ -21,23 +21,15 @@ const About = () => {
                     `}
                 >
                     <p>
-                        SD Hacks is where the best student hackers gather and
-                        work on innovative projects. Then, why are we letting
-                        these projects stay stale on GitHub repositories after
-                        the event?{' '}
+                    SD Hacks has been one of the largest hackathons in California since its 
+                    conception back in 2015. We take pride in being a fully student-organized 
+                    event run by the Triton Engineering Student Council (TESC) at UCSD. We partner 
+                    with numerous other student-run engineering organizations at UC San Diego to 
+                    lead technical workshops and host social events. This year, SD Hacks 2022 will 
+                    be entirely virtual and is shaping up to become an unforgettable 36 hours of 
+                    collaboration, empowerment, and innovation.{' '}
                     </p>{' '}
                     <p></p>
-                    <p>
-                        This simple question drove us to create SD Hacks
-                        Fellowship. SD Hacks Fellowship is a 10-week accelerator
-                        program for those interested in continuing their SD
-                        Hacks projects as something bigger - either startups,
-                        non-profit organizations, or impactful side-projects. SD
-                        Hacks Fellowship is an infrastructure where the best
-                        "hacks" at SD Hacks will grow way beyond just hackathon
-                        projects. Join our community of growth-minded talented
-                        engineers and get support to build your big things.
-                    </p>
                 </div>
             </Container>
         </AboutContainer>

@@ -23,7 +23,13 @@ const Tracks = () => {
             name: 'health and well being',
             icon: <Learning />,
             description:
-                'In this unprecedented time, families across the United States face challenges associated with the transition to remote learning, whether it be those facing connection inequity, individuals with special needs, or people experiencing homelessness.',
+                'After 2 years of ups and downs, school closures, and isolation; many of us have had our mental and overall physical health suffer greatly. Teams in this track are encouraged to create solutions that can boost any form of health, whether that be focusing on mental health or even boosting an individuals physical activity.',
+        },
+        {
+            name: 'civic engagement',
+            icon: <Civic />,
+            description:
+                'In a country blighted by many challenges like rising concerns of inequity, and immense social changes, there is a need for more voices to be heard. Hackers are encouraged to develop solutions to amplify the voices of everyday people.',
         },
         {
             name: 'sustainability',
@@ -37,12 +43,7 @@ const Tracks = () => {
             description:
                 'In a growing society, we require new solutions tackling societal, environmental, and economic issues. This track spans everything from small neighborhood improvements to ambitious endeavors in large cities. Potential solutions include reducing carbon emissions, tackling transportation inequity, infrastructure improvements, or affordable housing.',
         },
-        {
-            name: 'civic engagement',
-            icon: <Civic />,
-            description:
-                'In a country blighted by many challenges like rising concerns of inequity, and immense social changes, there is a need for more voices to be heard. Hackers are encouraged to develop solutions to amplify the voices of everyday people.',
-        },
+        
     ];
 
     return (
@@ -128,8 +129,8 @@ const TracksCard = styled.div`
     }
 
     .track-name {
-        font-size: clamp(1rem, 10vw, 3rem);
-        text-shadow: 0px 6px #201f26;
+        font-size: clamp(1rem, 10vw, 2.5rem);
+        text-shadow: 0px 4px #201f26;
 
         margin-left: 1em;
     }
