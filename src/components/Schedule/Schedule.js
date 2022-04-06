@@ -41,7 +41,7 @@ const Schedule = () => {
 
             <center>
                 <Iframe
-                    src="https://calendar.google.com/calendar/embed?height=600&amp;wkst=1&amp;bgcolor=%23ffffff&amp;ctz=America%2FLos_Angeles&amp;src=Y192cjZjYnBrZ3ZhMWY5ajhmaWE2ZTBkOGtvc0Bncm91cC5jYWxlbmRhci5nb29nbGUuY29t&amp;color=%233F51B5&amp;mode=AGENDA"
+                    src="https://calendar.google.com/calendar/embed?src=c_s3ivm88gp3e615ek2kaqt24ohk%40group.calendar.google.com&ctz=America%2FLos_Angeles"
                     styles="border:solid 1px #777"
                     width="800"
                     height="600"
@@ -54,7 +54,7 @@ const Schedule = () => {
 };
 
 const ScheduleContainer = styled.section`
-    background-color: var(--orange-light);
+    background-color: var(--yellow-light);
     padding-bottom: 15rem;
 `;
 
