@@ -1,52 +1,53 @@
 @font-face {
-    font-family: 'Trap';
-    font-style: normal;
-    font-weight: 300;
-    src: local('Trap'), url('../assets/fonts/Trap-Light.otf') format('opentype');
-}
-
-@font-face {
-    font-family: 'Trap';
-    font-style: normal;
-    font-weight: 400;
-    src: local('Trap'),
-        url('../assets/fonts/Trap-Regular.otf') format('opentype');
-}
-
-@font-face {
-    font-family: 'Trap';
-    font-style: normal;
-    font-weight: 500;
-    src: local('Trap'),
-        url('../assets/fonts/Trap-Medium.otf') format('opentype');
-}
-
-@font-face {
-    font-family: 'Trap';
-    font-style: normal;
-    font-weight: 600;
-    src: local('Trap'),
-        url('../assets/fonts/Trap-SemiBold.otf') format('opentype');
-}
-
-@font-face {
-    font-family: 'Trap';
-    font-style: normal;
-    font-weight: 700;
-    src: local('Trap'), url('../assets/fonts/Trap-Bold.otf') format('opentype');
-}
-
-@font-face {
-    font-family: 'Trap';
-    font-style: normal;
-    font-weight: 800;
-    src: local('Trap'),
-        url('../assets/fonts/Trap-ExtraBold.otf') format('opentype');
-}
-
-@font-face {
-    font-family: 'Trap';
+    font-family: 'Roboto Condensed';
     font-style: normal;
     font-weight: 900;
-    src: local('Trap'), url('../assets/fonts/Trap-Black.otf') format('opentype');
+    src: local('Roboto Condensed'),
+        url('../assets/fonts/RobotoCondensed-Light.ttf') format('opentype');
 }
+
+@font-face {
+    font-family: 'Roboto Condensed';
+    font-style: normal;
+    font-weight: 400;
+    src: local('Roboto Condensed'),
+        url('../assets/fonts/RobotoCondensed-Regular.ttf') format('opentype');
+}
+
+@font-face {
+    font-family: 'Roboto Condensed';
+    font-style: normal;
+    font-weight: 500;
+    src: local('Roboto Condensed'),
+        url('../assets/fonts/RobotoCondensed-Bold.ttf') format('opentype');
+}
+
+@font-face {
+    font-family: 'Roboto Condensed';
+    font-style: normal;
+    font-weight: 300;
+    src: local('Roboto Condensed'),
+        url('../assets/fonts/RobotoCondensed-BoldItalic.ttf') format('opentype');
+}
+
+// @font-face {
+//     font-family: 'Roboto Condensed';
+//     font-style: normal;
+//     font-weight: 700;
+// }
+
+// @font-face {
+//     font-family: 'Roboto Condensed';
+//     font-style: normal;
+//     font-weight: 800;
+//     src: local('Trap'),
+//         url('../assets/fonts/Trap-ExtraBold.otf') format('opentype');
+// }
+
+// @font-face {
+//     font-family: 'Trap';
+//     font-style: normal;
+//     font-weight: 900;
+//     src: local('Trap'), 
+//         url('../assets/fonts/Trap-Black.otf') format('opentype');
+// }

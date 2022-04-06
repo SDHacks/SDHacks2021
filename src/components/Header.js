@@ -29,7 +29,7 @@ const Header = ({ navItems }) => {
 
     return (
         <Navbar
-            bg="orange-light"
+            bg="yellow"
             expand="lg"
             css={`
                 font-weight: 900;

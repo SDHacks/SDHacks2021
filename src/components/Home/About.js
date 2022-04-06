@@ -52,48 +52,14 @@ const About = () => {
 };
 
 const AboutSection = styled.section`
-    background-color: var(--orange-light);
+    background-color: var(--yellow);
     position: relative;
     padding-top: 5rem;
-
-    // .train {
-    //     position: absolute;
-    //     bottom: 0%;
-    //     left: 0%;
-    //     width: 100%;
-
-    //     @media (max-width: 576px) {
-    //         display: none;
-    //     }
-    // }
-
-    // .trees {
-    //     position: absolute;
-    //     bottom: -5%;
-    //     right: 0%;
-    //     width: 40%;
-
-    //     @media (max-width: 1375px) {
-    //         bottom: -7%;
-    //     }
-
-    //     @media (max-width: 920px) {
-    //         bottom: -8%;
-    //     }
-
-    //     @media (max-width: 800px) {
-    //         bottom: -9%;
-    //     }
-
-    //     @media (max-width: 576px) {
-    //         display: none;
-    //     }
-    // }
 `;
 
 const StyledContainer = styled(Container)`
     color: var(--dark);
-    font-family: Trap, sans-serif;
+    font-family: Roboto Condensed, sans-serif;
     padding-top: 10rem;
     padding-bottom: 18rem;
 
@@ -104,13 +70,13 @@ const StyledContainer = styled(Container)`
 
 const Title = withReveal(
     styled.h1`
-        font-weight: 900;
+        font-weight: 400;
         font-size: clamp(2rem, 15vw, 5rem);
         margin-bottom: 2rem;
 
         span {
-            color: var(--orange);
-            font-weight: 900;
+            color: var(--primary);
+            font-weight: 500;
         }
     `,
     <Slide left />
@@ -121,6 +87,7 @@ const Description = styled.p`
     font-size: 1em;
     line-height: 160%;
     margin-bottom: 2rem;
+    color: var(--primary);
 `;
 
 export default About;

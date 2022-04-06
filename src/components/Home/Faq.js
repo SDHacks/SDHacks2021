@@ -60,17 +60,18 @@ const Faq = () => {
 };
 
 const FaqWrapper = styled.section`
-    background: #d2f6fb;
+    background: #white;
     position: relative;
 
     .title {
-        font-weight: 900;
+        font-weight: 400;
         font-size: clamp(2rem, 10vw, 3rem);
-        color: var(--dark);
+        color: var(--yellow);
         margin-bottom: 3rem;
 
         span {
-            color: var(--cyan);
+            color: var(--bright-green);
+            font-weight: 500;
         }
     }
 
@@ -109,12 +110,12 @@ const FaqWrapper = styled.section`
         height: 100%;
         -webkit-backface-visibility: hidden;
         backface-visibility: hidden;
-        box-shadow: 15px 15px 0px 0px var(--dark);
-        background-color: var(--cyan);
+        box-shadow: 15px 15px 0px 0px var(--bright-green);
+        background-color: var(--yellow);
 
         h2 {
             font-size: 2.5rem;
-            font-weight: 900;
+            font-weight: 400;
             color: var(--dark);
         }
     }
@@ -129,24 +130,24 @@ const FaqWrapper = styled.section`
         height: 100%;
         -webkit-backface-visibility: hidden;
         backface-visibility: hidden;
-        background-color: #181727;
+        background-color: var(--bright-green);
         transform: rotateY(180deg);
-        box-shadow: 15px -15px 0px 0px var(--cyan);
+        box-shadow: 15px -15px 0px 0px var(--yellow);
 
         h2 {
             font-size: clamp(1.3rem, 2vw, 1.5rem);
             font-weight: 900;
-            color: var(--cyan);
+            color: white;
             margin-bottom: 1rem;
         }
 
         p {
             font-size: clamp(1rem, 1.5vw, 18px);
-            color: white;
+            color: black;
             margin-bottom: 0;
 
             a {
-                color: var(--cyan);
+                color: var(--white);
             }
         }
 

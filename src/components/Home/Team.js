@@ -9,7 +9,7 @@ import teamData from '../../data/teamData';
 const Team = () => {
     return (
         <TeamSection>
-            <Container>
+            {/* <Container>
                 <TeamHeader>
                     meet the <span style={{ color: '#81CB72' }}>team</span>
                 </TeamHeader>
@@ -31,7 +31,7 @@ const Team = () => {
                         </Col>
                     ))}
                 </Row>
-            </Container>
+            </Container> */}
             {/* <img
                 src={Building}
                 alt=""

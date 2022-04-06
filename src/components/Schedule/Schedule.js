@@ -54,7 +54,7 @@ const Schedule = () => {
 };
 
 const ScheduleContainer = styled.section`
-    background-color: var(--orange-light);
+    background-color: var(--yellow);
     padding-bottom: 15rem;
 `;
 

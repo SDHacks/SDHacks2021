@@ -41,9 +41,9 @@ const Hero = () => {
 };
 
 const HeroWrapper = styled.section`
-    height: 85vh;
+    height: 80vh;
     min-height: 800px;
-    background-color: var(--orange-light);
+    background-color: var(--yellow);
     position: relative;
 
     .container {
@@ -51,11 +51,11 @@ const HeroWrapper = styled.section`
         flex-direction: column;
         align-items: center;
         justify-content: center;
-        height: 100%;
+        height: 80%;
     }
 
     .hero-logo {
-        width: 45%;
+        width: 39%;
 
         @media (max-width: 576px) {
             width: 80%;
@@ -70,60 +70,6 @@ const HeroWrapper = styled.section`
         h1 {
             font-weight: 800;
             font-size: clamp(2rem, 15vw, 5rem);
-        }
-    }
-
-    .building-BR {
-        position: absolute;
-        bottom: -25%;
-        right: 0;
-        width: 20%;
-        z-index: 1;
-
-        @media (max-width: 576px) {
-            display: none;
-        }
-    }
-
-    .building-BL {
-        position: absolute;
-        bottom: -5%;
-        left: 10%;
-        z-index: 1;
-        animation: float 5s ease 2s infinite;
-
-        img {
-            width: 25vw;
-        }
-
-        @media (max-width: 576px) {
-            display: none;
-        }
-    }
-
-    .building-TR {
-        position: absolute;
-        top: 6%;
-        right: 7%;
-        animation: float 5s infinite;
-
-        img {
-            width: 20vw;
-        }
-
-        @media (max-width: 576px) {
-            display: none;
-        }
-    }
-
-    .building-TL {
-        position: absolute;
-        top: 0%;
-        left: -3.5%;
-        width: 15%;
-
-        @media (max-width: 576px) {
-            display: none;
         }
     }
 

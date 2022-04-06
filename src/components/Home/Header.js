@@ -28,11 +28,11 @@ const Header = ({ navItems }) => {
 
     return (
         <Navbar
-            bg="orange-light"
+            bg="yellow"
             expand="lg"
             css={`
                 font-weight: 900;
-                font-size: 18px;
+                font-size: 20px;
 
                 .navbar-brand img {
                     margin-left: 45px;
