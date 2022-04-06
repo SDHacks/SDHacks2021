@@ -4,7 +4,7 @@ import styled from 'styled-components';
 
 import { ReactComponent as Learning } from '../../assets/icons/learning.svg';
 import { ReactComponent as Sustainability } from '../../assets/icons/sustainability.svg';
-// import { ReactComponent as Urban } from '../../assets/icons/urban.svg';
+import { ReactComponent as Urban } from '../../assets/icons/urban.svg';
 import { ReactComponent as Civic } from '../../assets/icons/civic.svg';
 
 // import Building from '../../assets/svg/building-jacobs.svg';
@@ -37,13 +37,12 @@ const Tracks = () => {
             description:
                 'Our climate is changing and it takes a systematic effort to combat it. This track encourages hackers to develop solutions tackling the challenges of climate change or educating the public about the environmental challenges we face.',
         },
-     /*{{
+        {
             name: 'community',
             icon: <Urban />,
             description:
                 'In a growing society, we require new solutions tackling societal, environmental, and economic issues. This track spans everything from small neighborhood improvements to ambitious endeavors in large cities. Potential solutions include reducing carbon emissions, tackling transportation inequity, infrastructure improvements, or affordable housing.',
         },
-    */
         
     ];
 
