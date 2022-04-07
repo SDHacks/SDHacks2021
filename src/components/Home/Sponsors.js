@@ -30,6 +30,8 @@ import swe from '../../assets/partners/swe.png';
 import os from '../../assets/partners/OpenSource.png';
 import tbp from '../../assets/partners/tbp.png';
 import tlg from '../../assets/partners/tlg.png';
+import gwc from '../../assets/partners/gwc.svg';
+import ic from '../../assets/partners/ic.svg';
 
 function Sponsor(props) {
     const col = props.col || 'col-md-4 col-lg-4';
@@ -165,7 +167,7 @@ const tierTwoSponsor = [
     {
         name: 'ChrisAndFrank',
         logo: chrisandfrank,
-        link: 'https://www.mage.ai',
+        link: 'https://chrisandfrank.com',
         width: '100',
     },
 /*
@@ -235,7 +237,7 @@ const tierTwoSponsor = [
 ].map((x) => ({ ...x, tier: 1 }));
 
 const tierOnePartner = [
-{/* COMMENTING OUT UNCONFIRMED PARTNERS
+/* COMMENTING OUT UNCONFIRMED PARTNERS
     {
         name: 'ACM',
         logo: acm,
@@ -278,14 +280,14 @@ const tierOnePartner = [
         link: 'http://swe.ucsd.edu/',
         width: '100',
     },
-*/},
+*/
     {
         name: 'Tau Beta Pi',
         logo: tbp,
         link: 'https://tbp.ucsd.edu/home',
         width: '70',
     },
-{/* COMMENTING OUT UNCONFIRMED PARTNERS
+    /* COMMENTING OUT UNCONFIRMED PARTNERS
     {
         name: 'Triton LinkedIn Group',
         logo: tlg,
@@ -298,7 +300,19 @@ const tierOnePartner = [
         link: 'https://wic.ucsd.edu/',
         width: '80',
     },
-*/}
+    */
+    {
+        name: 'Girls Who Code',
+        logo: gwc,
+        link: 'https://girlswhocode.ucsd.edu/',
+        width: '80',
+    },
+    {
+        name: 'Investors Club',
+        logo: ic,
+        link: 'https://www.theinvestorsclub.xyz/',
+        width: '100',
+    },
 ].map((x) => ({ ...x, tier: 3 }));
 
 export default Sponsors;
