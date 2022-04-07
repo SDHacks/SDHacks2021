@@ -32,7 +32,7 @@ const Header = ({ navItems }) => {
             expand="lg"
             css={`
                 font-weight: 900;
-                font-size: 20px;
+                font-size: 18px;
 
                 .navbar-brand img {
                     margin-left: 45px;
@@ -58,7 +58,7 @@ const Header = ({ navItems }) => {
                 </Navbar.Brand>
                 <Navbar.Toggle aria-controls="navbar-nav" />
                 <Navbar.Collapse id="navbar-nav">
-                    <Nav className="ml-5 mr-0">
+                    <Nav className="ml-auto">
                         {navLinks.map((name, i) => (
                             <Nav.Link href={`#${name}`} key={i}>
                                 {name}

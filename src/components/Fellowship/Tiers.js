@@ -32,7 +32,7 @@ const tiersTable = () => {
 };
 
 const TierContainer = styled.div`
-    background-color: var(--yellow-light);
+    background-color: var(--yellow);
     color: var(--dark);
     padding: 5% 0;
 
