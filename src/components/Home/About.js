@@ -4,6 +4,8 @@ import styled from 'styled-components';
 import { Fade, Slide } from 'react-reveal';
 import withReveal from 'react-reveal/withReveal';
 
+import veinsRight from '../../assets/svg/veins-home-right.svg';
+import veinsLeft from '../../assets/svg/veins-home-left.svg';
 // import Train from '../../assets/svg/train-1.svg';
 // import { ReactComponent as Trees } from '../../assets/svg/trees.svg';
 
@@ -43,10 +45,8 @@ const About = () => {
                     </Col>
                 </Row>
             </StyledContainer>
-            <Slide left>
-                {/* <img src={Train} className="train" alt="bullet train" /> */}
-            </Slide>
-            {/* <Trees className="trees" /> */}
+            <img src={veinsRight} className="veinsR" alt="green veins" />
+            <img src={veinsLeft} className="veinsL" alt="green veins" />
         </AboutSection>
     );
 };
@@ -55,6 +55,30 @@ const AboutSection = styled.section`
     background-color: var(--yellow);
     position: relative;
     padding-top: 5rem;
+
+    .veinsR {
+        position: absolute;
+        top: -60%;
+        right: 0%;
+        img {
+            width: 20vw;
+        }
+        @media (max-width: 576px) {
+            display: none;
+        }
+    }
+
+    .veinsL {
+        position: absolute;
+        top: 50%;
+        left: 0%;
+        img {
+            width: 20vw;
+        }
+        @media (max-width: 576px) {
+            display: none;
+        }
+    }
 `;
 
 const StyledContainer = styled(Container)`

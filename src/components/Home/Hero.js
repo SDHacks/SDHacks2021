@@ -3,6 +3,7 @@ import { Container, Button } from 'react-bootstrap';
 import styled from 'styled-components';
 import { Fade, Slide } from 'react-reveal';
 
+import veinsRight from '../../assets/svg/veins-home-right.svg';
 // import BuildingBR from '../../assets/svg/building-hero-br.svg';
 // import BuildingBL from '../../assets/svg/building-hero-bl.svg';
 // import BuildingTL from '../../assets/svg/building-hero-tl.svg';
@@ -56,6 +57,9 @@ const Hero = () => {
                     </div>
                 </Fade>
             </Container>
+            {/* <Parallax className="veins-R" y={[100, 0]}> */}
+            {/* <img src={veinsRight} className="veins" alt="green veins" /> */}
+            {/* </Parallax> */}
         </HeroWrapper>
     );
 };
@@ -90,6 +94,19 @@ const HeroWrapper = styled.section`
         h1 {
             font-weight: 800;
             font-size: clamp(2rem, 15vw, 5rem);
+        }
+    }
+
+    .veins {
+        position: absolute;
+        top: 50%;
+        right: 0%;
+        // animation: float 5s infinite;
+        img {
+            width: 20vw;
+        }
+        @media (max-width: 576px) {
+            display: none;
         }
     }
 
