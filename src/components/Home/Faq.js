@@ -60,7 +60,7 @@ const Faq = () => {
 };
 
 const FaqWrapper = styled.section`
-    background: #white;
+    background-color: var(--white);
     position: relative;
 
     .title {

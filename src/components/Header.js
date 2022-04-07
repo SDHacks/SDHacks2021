@@ -31,27 +31,6 @@ const Header = ({ navItems }) => {
         <Navbar
             bg="yellow"
             expand="lg"
-            css={`
-                font-weight: 900;
-                font-size: 18px;
-
-                .navbar-brand img {
-                    margin-left: 45px;
-
-                    @media (max-width: 576px) {
-                        height: 25px;
-                    }
-                }
-
-                .navbar-nav {
-                    margin-right: 14rem;
-                    text-transform: uppercase;
-                }
-
-                .nav-link {
-                    transition: color 0.1s;
-                }
-            `}
         >
             <Container>
                 <Navbar.Brand href="/" className="mx-auto mr-md-auto">
