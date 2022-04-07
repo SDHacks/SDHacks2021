@@ -59,7 +59,7 @@ const FaqWrapper = styled.section`
 	max-width: 600px;
 	max-height: 600px;
 	padding-top: 20px;
-	padding-right: 20px;
+	padding-right: 50px;
 	padding-bottom: 20px;
 	padding-left: 20px;
     }
