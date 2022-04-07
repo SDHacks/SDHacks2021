@@ -31,8 +31,8 @@ const Header = ({ navItems }) => {
             bg="yellow"
             expand="lg"
             css={`
-                font-weight: 900;
-                font-size: 18px;
+                font-weight: 500;
+                font-size: 20px;
 
                 .navbar-brand img {
                     margin-left: 45px;
@@ -43,7 +43,6 @@ const Header = ({ navItems }) => {
                 }
 
                 .navbar-nav {
-                    margin-right: 14rem;
                     text-transform: uppercase;
                 }
 
@@ -52,13 +51,14 @@ const Header = ({ navItems }) => {
                 }
             `}
         >
+            
             <Container>
                 <Navbar.Brand href="/" className="mx-auto mr-md-auto">
                     <img src={Logo} alt="logo" height="40" />
                 </Navbar.Brand>
                 <Navbar.Toggle aria-controls="navbar-nav" />
-                <Navbar.Collapse id="navbar-nav">
-                    <Nav className="ml-auto">
+                <Navbar.Collapse id="navbar-nav" >
+                    <Nav className="ml-auto mt-4">
                         {navLinks.map((name, i) => (
                             <Nav.Link href={`#${name}`} key={i}>
                                 {name}
