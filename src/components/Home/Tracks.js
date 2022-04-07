@@ -4,7 +4,7 @@ import styled from 'styled-components';
 
 import { ReactComponent as Learning } from '../../assets/icons/learning.svg';
 import { ReactComponent as Sustainability } from '../../assets/icons/sustainability.svg';
-// import { ReactComponent as Urban } from '../../assets/icons/urban.svg';
+import { ReactComponent as Urban } from '../../assets/icons/urban.svg';
 import { ReactComponent as Civic } from '../../assets/icons/civic.svg';
 
 // import Building from '../../assets/svg/building-jacobs.svg';
@@ -37,13 +37,12 @@ const Tracks = () => {
             description:
                 'Our climate is changing and it takes a systematic effort to combat it. This track encourages hackers to develop solutions tackling the challenges of climate change or educating the public about the environmental challenges we face.',
         },
-     /*{{
+        {
             name: 'community',
             icon: <Urban />,
             description:
                 'In a growing society, we require new solutions tackling societal, environmental, and economic issues. This track spans everything from small neighborhood improvements to ambitious endeavors in large cities. Potential solutions include reducing carbon emissions, tackling transportation inequity, infrastructure improvements, or affordable housing.',
         },
-    */
         
     ];
 
@@ -68,7 +67,7 @@ const Tracks = () => {
                                         </div>
                                         <div className="track-name">{name}</div>
                                     </Col>
-                                    <Col className="svg">{icon}</Col>
+                                    {/* <Col className="svg">{icon}</Col> */}
                                 </Row>
                             </TracksCard>
                         ))}
@@ -88,44 +87,30 @@ const Tracks = () => {
 };
 
 const TracksSection = styled.section`
-    background-color: var(--primary);
+    background-color: black;
     position: relative;
     padding: 10rem 0;
 
     .track-container {
         z-index: 1;
     }
-
-    // .building-img {
-    //     position: absolute;
-    //     bottom: 0;
-    //     left: 7em;
-
-    //     @media (max-width: 992px) {
-    //         opacity: 0.5;
-    //     }
-
-    //     @media (max-width: 576px) {
-    //         display: none;
-    //     }
-    // }
 `;
 
 const Title = styled.h1`
-    color: var(--yellow-light);
-    font-weight: 900;
+    color: var(--yellow);
+    font-weight: 500;
     font-size: clamp(2rem, 15vw, 5rem);
 
     span {
-        color: var(--green);
-        font-weight: 900;
+        color: var(--yellow);
+        font-weight: 400;
         font-size: 1em;
     }
 `;
 
 const TracksCard = styled.div`
-    color: var(--purple);
-    font-weight: 900;
+    color: var(--yellow);
+    font-weight: 400;
     border: 0.5em solid;
     border-radius: 1.5em;
     padding-top: 1.5em;
@@ -134,8 +119,8 @@ const TracksCard = styled.div`
     cursor: pointer;
 
     .track-num {
-        color: var(--primary);
-        background-color: var(--purple);
+        color: var(--gray);
+        background-color: var(--yellow);
         border-radius: 0 0.4em 0.4em 0;
         padding: 0.2em 0.5em;
         padding-bottom: 0.1em;

@@ -54,7 +54,7 @@ const Sponsors = () => {
                     <SectionHeader>
                         <span
                             css={`
-                                color: var(--cyan);
+                                color: var(--primary);
                             `}
                         >
                             SPONSORS & PARTNERS

@@ -91,8 +91,8 @@ const Footer = () => {
 
 const StyledFooter = styled.footer`
     padding: 3rem;
-    background: var(--yellow-light);
-    color: var(--yellow-light);
+    background: black;
+    color: white;
     position: relative;
 
     p {

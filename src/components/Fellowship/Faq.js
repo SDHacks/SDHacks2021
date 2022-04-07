@@ -88,7 +88,7 @@ const FaqData = [
 ];
 
 const FaqContainer = styled.section`
-    background-color: var(--yellow-light);
+    background-color: var(--yellow);
     color: var(--dark);
     padding: 5% 0;
 
