@@ -167,7 +167,7 @@ const tierTwoSponsor = [
     {
         name: 'ChrisAndFrank',
         logo: chrisandfrank,
-        link: 'https://chrisandfrank.com',
+        link: 'https://chrisandfrank.com/san-diego-personal-injury-lawyer/',
         width: '100',
     },
 /*
